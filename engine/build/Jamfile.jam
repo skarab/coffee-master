@@ -1,0 +1,95 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+
+LIBRARY_PATH = ../../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+TEMP_PATH = ../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPostfix * : ;
+
+SubInclude TOP : coffee_engine_include ;
+SubDir TOP ../source/ ;
+
+SOURCES =
+    coffee.h
+    coffee.cpp
+    coffee_mode.h
+    coffee_includes.h
+    coffee_externals.h
+    coffee_modules.hpp
+    kernel/kernel.h
+    kernel/kernel_macros.h
+    system/system.h
+    system/system_macros.h
+    wide/wide.h
+    wide/wide_macros.h
+;
+
+SubDir TOP ;
+
+# LIBRARIES ----------------------------------------------------------------------------------------
+
+# Kernel libraries
+SubInclude TOP : kernel-core ;
+SubInclude TOP : kernel-meta ;
+SubInclude TOP : kernel-basic ;
+SubInclude TOP : kernel-shell ;
+SubInclude TOP : kernel-storage ;
+SubInclude TOP : kernel-resource ;
+
+# System libraries
+SubInclude TOP : system-input ;
+SubInclude TOP : system-scene ;
+SubInclude TOP : system-audio ;
+SubInclude TOP : system-graphics ;
+SubInclude TOP : system-physics ;
+
+# Wide libraries
+SubInclude TOP : wide-ui ;
+SubInclude TOP : wide-ui-widget ;
+SubInclude TOP : wide-application ;
+SubInclude TOP : wide-edition ;
+SubInclude TOP : wide-project ;
+SubInclude TOP : wide-component ;
+SubInclude TOP : wide-plugins ;
+
+SubDir TOP ../source/ ;
+
+# ENGINE DYNAMIC LIBRARY ---------------------------------------------------------------------------
+
+LIBRARIES =
+    kernel-core
+    kernel-meta
+    kernel-basic
+    kernel-shell
+    kernel-storage
+    kernel-resource
+    system-input
+    system-graph
+    system-scene
+    system-audio
+    system-graphics
+    system-physics
+    system-plugins
+    wide-ui
+    wide-ui-widget
+    wide-application
+    wide-edition
+    wide-project
+    wide-component
+;
+
+AutoSourceGroup coffee_engine : $(SOURCES) ;
+Workspace coffee_engine : coffee_engine ;
+
+if $(COMPILER) = mingw
+{
+    C.LinkFlags coffee_engine : -Wl,--out-implib,$(LIBRARY_PATH)/coffee_engine.dll.a ;
+}
+
+LOCATE_TARGET = $(TEMP_PATH) ;
+
+C.LinkPrebuiltLibraries coffee_engine : $(PREBUILT_LIBRARIES) ;
+
+C.OutputPath coffee_engine : $(LIBRARY_PATH) ;
+C.OutputName coffee_engine : coffee_engine ;
+C.Library coffee_engine : $(SOURCES) : shared ;
+

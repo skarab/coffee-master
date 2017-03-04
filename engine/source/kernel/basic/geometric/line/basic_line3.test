@@ -1,0 +1,21 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicGeometricLine3::Constructors);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicGeometricLine3)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Line3 empty;
+            TDOG_ASSERT(empty.Point==basic::Vector3::Zero);
+            TDOG_ASSERT(empty.Axis==basic::Vector3::XAxis);
+            
+            basic::Line3 line(basic::Vector3::One, basic::Vector3::YAxis);
+            TDOG_ASSERT(line.Point==basic::Vector3::One);
+            TDOG_ASSERT(line.Axis==basic::Vector3::YAxis);
+        }
+        
+    }
+}
+#endif

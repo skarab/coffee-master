@@ -1,0 +1,61 @@
+IESNA:LM-63-1995
+[TEST] Photopia 1.5.0.22 PHOTOMETRIC REPORT
+[LUMINAIRE] PROJECT: CDNXXB40
+[OTHER] OPTIONS:
+[OTHER]   Performing lamp shadow check up to 500 tries.
+[OTHER]   Spawning 1 rays for each reaction.
+[OTHER]   Writing 250 rays to a DXF file.
+[OTHER]   Random number generator seed: 8.
+[OTHER]   Tracing 10 reflections.
+[OTHER]   Stop tracing ray at 2.0% of initial magnitude.
+[OTHER]   Tracing 1000006 initial lamp rays.
+[OTHER]   Photometric test distance of 7.00 meters.
+[OTHER]
+[OTHER] LUMENS EXITING SYSTEM:
+[OTHER]   Lumens(%)       Reflection
+[OTHER]     2742( 43.5%)      0
+[OTHER]      949( 15.1%)      1
+[OTHER]      210(  3.3%)      2
+[OTHER]      305(  4.8%)      3
+[OTHER]      115(  1.8%)      4
+[OTHER]      144(  2.3%)      5
+[OTHER]       74(  1.2%)      6
+[OTHER]       75(  1.2%)      7
+[OTHER]       46(  0.7%)      8
+[OTHER]       42(  0.7%)      9
+[OTHER]       28(  0.5%)     10
+[OTHER]     4735( 75.2%)  Total
+[OTHER]
+[OTHER] LUMENS ABSORBED BY SYSTEM:
+[OTHER]   Lumens(%)       Layer Name
+[OTHER]       98(  1.6%)   REFL-BODY
+[OTHER]      787( 12.5%)   REFL-SUPPORT
+[OTHER]      116(  1.9%)   LAMP-F40BX2
+[OTHER]      150(  2.4%)   LAMP-F40BX1
+[OTHER]        0(  0.0%)   LAMP-F40BXA
+[OTHER]       14(  0.2%)   LAMP-F40BX3
+[OTHER]       20(  0.3%)   REFL-SOLIDPANEL
+[OTHER]     1187( 18.8%)  Total
+[OTHER]   Lumens(%)       Material
+[OTHER]      266(  4.2%)   PHOSGLAS
+[OTHER]       14(  0.2%)   BASECFL1
+[OTHER]      904( 14.4%)   PAINT006
+[OTHER]     1185( 18.8%)  Total
+[OTHER]
+[OTHER] UNACCOUNTED LUMENS:
+[OTHER]         reached interreflection limit:   219.57 (  3.5%)
+[OTHER]       fell below continuation minimum:     0.00 (  0.0%)
+[OTHER] could not find in/out refractor facet:     0.00 (  0.0%)
+[OTHER]  reached try limit for scatter bounce:   156.01 (  2.5%)
+[OTHER]  lost elsewhere(i.e. outside distrib):     0.38 (  0.0%)
+TILT=NONE
+2 3150 1 11 5 1 2 0.82955 0.82955 0.100786
+1 1 90
+90 95 105 115 125 135 145 155 165 175 180
+0 22.5 45 67.5 90
+95 349 505 717 917 1069 1200 1287 1364 1405 1508
+84 317 498 726 903 1048 1161 1273 1378 1414 1508
+44 238 470 667 858 998 1184 1260 1363 1391 1508
+20 136 443 558 838 953 1143 1290 1354 1418 1508
+13 94 405 549 812 994 1120 1312 1311 1408 1508
+

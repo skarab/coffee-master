@@ -1,0 +1,22 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(CoreError::Assert);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(CoreError)
+    {
+        TDOG_TEST_CASE(Assert)
+        {
+            int x = 1;
+            int y = 1;
+
+            if (x > 0)
+                COFFEE_Assert(y > 0, coffee::core::ERROR_CODE_Unexpected, "");
+            else
+                x = 0;
+            
+            TDOG_ASSERT(x==1);
+        }
+    }
+}
+#endif

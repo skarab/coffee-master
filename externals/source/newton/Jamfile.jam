@@ -1,0 +1,136 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : newton_include ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix newton : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath newton : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName newton : newton ;
+
+SOURCES =
+    pack/core/dg.cpp
+    pack/core/dgRef.cpp
+    pack/core/dgCRC.cpp
+    pack/core/dgTree.cpp
+    pack/core/dgNode.cpp
+    pack/core/dgTypes.cpp
+    pack/core/dgDebug.cpp
+    pack/core/dgMatrix.cpp
+    pack/core/dgGoogol.cpp
+    pack/core/dgMemory.cpp
+    pack/core/dgSphere.cpp
+    pack/core/dgRandom.cpp
+    pack/core/dgThreads.cpp
+    pack/core/dgPolyhedra.cpp
+    pack/core/dgQuaternion.cpp
+    pack/core/dgConvexHull3d.cpp
+    pack/core/dgConvexHull4d.cpp
+    pack/core/dgIntersections.cpp
+    pack/core/dgAABBPolygonSoup.cpp
+    pack/core/dgSmallDeterminant.cpp
+    pack/core/dgPolygonSoupBuilder.cpp
+    pack/core/dgPolyhedraMassProperties.cpp
+    pack/core/dgDelaunayTetrahedralization.cpp
+    pack/physics/dgWorld.cpp
+    pack/physics/dgBody.cpp
+    pack/physics/dgMeshEffect.cpp
+    pack/physics/dgMeshEffect2.cpp
+    pack/physics/dgMeshEffect3.cpp
+    pack/physics/dgMeshEffectSolidTree.cpp
+    pack/physics/dgCollisionConvex.cpp
+    pack/physics/dgBallConstraint.cpp
+    pack/physics/dgBilateralConstraint.cpp
+    pack/physics/dgCorkscrewConstraint.cpp
+    pack/physics/dgHingeConstraint.cpp
+    pack/physics/dgNarrowPhaseCollision.cpp
+    pack/physics/dgBroadPhaseCollision.cpp
+    pack/physics/dgMinkowskiConv.cpp
+    pack/physics/dgCollisionBox.cpp
+    pack/physics/dgCollisionCapsule.cpp
+    pack/physics/dgCollisionBVH.cpp
+    pack/physics/dgCollisionMesh.cpp
+    pack/physics/dgCollisionUserMesh.cpp
+    pack/physics/dgCollisionChamferCylinder.cpp
+    pack/physics/dgPointToCurveConstraint.cpp
+    pack/physics/dgCollisionCone.cpp
+    pack/physics/dgCollisionConvexHull.cpp
+    pack/physics/dgSlidingConstraint.cpp
+    pack/physics/dgCollisionConvexModifier.cpp
+    pack/physics/dgUniversalConstraint.cpp
+    pack/physics/dgCollision.cpp
+    pack/physics/dgUpVectorConstraint.cpp
+    pack/physics/dgCollisionCylinder.cpp
+    pack/physics/dgUserConstraint.cpp
+    pack/physics/dgCollisionEllipse.cpp
+    pack/physics/dgCollisionNull.cpp
+    pack/physics/dgCollisionScene.cpp
+    pack/physics/dgCollisionCompoundBreakable.cpp
+    pack/physics/dgCollisionHeightField.cpp
+    pack/physics/dgWorldDynamicUpdate.cpp
+    pack/physics/dgCollisionSphere.cpp
+    pack/physics/dgCollisionCompound.cpp
+    pack/physics/dgConnectorConstraint.cpp
+    pack/physics/dgConstraint.cpp
+    pack/physics/dgBodyMasterList.cpp
+    pack/physics/dgContact.cpp
+    pack/newton/Newton.cpp
+    pack/newton/NewtonClass.cpp
+    pack/joints/Custom6DOF.h
+    pack/joints/CustomBallAndSocket.h
+    pack/joints/CustomCorkScrew.h
+    pack/joints/CustomDGRayCastCar.h
+    pack/joints/CustomDryRollingFriction.h
+    pack/joints/CustomGear.h
+    pack/joints/CustomHinge.h
+    pack/joints/CustomJointLibraryStdAfx.h
+    pack/joints/CustomKinematicController.h
+    pack/joints/CustomMultiBodyVehicle.h
+    pack/joints/CustomPathFollow.h
+    pack/joints/CustomPlayerController.h
+    pack/joints/CustomPulley.h
+    pack/joints/CustomRagDoll.h
+    pack/joints/CustomSlider.h
+    pack/joints/CustomSlidingContact.h
+    pack/joints/CustomUniversal.h
+    pack/joints/CustomUpVector.h
+    pack/joints/CustomUserBlank.h
+    pack/joints/CustomWormGear.h
+    pack/joints/JointLibrary.h
+    pack/joints/NewtonCustomJoint.h
+    pack/joints/Custom6DOF.cpp
+    pack/joints/CustomBallAndSocket.cpp
+    pack/joints/CustomCorkScrew.cpp
+    pack/joints/CustomDGRayCastCar.cpp
+    pack/joints/CustomDryRollingFriction.cpp
+    pack/joints/CustomGear.cpp
+    pack/joints/CustomHinge.cpp
+    pack/joints/CustomJointLibraryStdAfx.cpp
+    pack/joints/CustomKinematicController.cpp
+    pack/joints/CustomMultiBodyVehicle.cpp
+    pack/joints/CustomPathFollow.cpp
+    pack/joints/CustomPlayerController.cpp
+    pack/joints/CustomPulley.cpp
+    pack/joints/CustomRagDoll.cpp
+    pack/joints/CustomSlider.cpp
+    pack/joints/CustomSlidingContact.cpp
+    pack/joints/CustomUniversal.cpp
+    pack/joints/CustomUpVector.cpp
+    pack/joints/CustomUserBlank.cpp
+    pack/joints/CustomWormGear.cpp
+    pack/joints/JointLibrary.cpp
+    pack/joints/NewtonCustomJoint.cpp
+    pack/math/dMathDefines.h
+    pack/math/dMathDefines.cpp
+    pack/math/dMatrix.h
+    pack/math/dMatrix.cpp
+    pack/math/dQuaternion.h
+    pack/math/dQuaternion.cpp
+    pack/math/dStdAfxMath.h
+    pack/math/dStdAfxMath.cpp
+    pack/math/dVector.h
+    pack/math/dVector.cpp
+;
+
+C.Library newton : $(SOURCES) ;

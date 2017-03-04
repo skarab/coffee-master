@@ -1,0 +1,15 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(CorePlatform::GetTime);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(CorePlatform)
+    {
+        TDOG_TEST_CASE(GetTime)
+        {
+            TDOG_ASSERT(core::Platform::Get().GetTime()>0.0f);
+            TDOG_ASSERT(core::Platform::Get().GetTime()<60.0f);
+        }
+    }
+}
+#endif

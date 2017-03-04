@@ -1,0 +1,18 @@
+// -------------------------------------------------------------------------------------------------
+// Base tonemapper fragment shader [end]
+// -------------------------------------------------------------------------------------------------
+
+void main()
+{
+    vec3 color = texture2DRect(input_texture, uv).xyz;
+    
+    color = ApplyTonemap(color);
+    
+    color *= contrast;
+    color += brightness;
+    color = vec3(
+        pow(color.x, gamma),
+        pow(color.y, gamma),
+        pow(color.z, gamma));
+    gl_FragColor = vec4(color, 1.0);
+}

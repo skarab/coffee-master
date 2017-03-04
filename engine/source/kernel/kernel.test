@@ -1,0 +1,2 @@
+#include "kernel/core/core.test"
+#include "kernel/basic/basic.test"

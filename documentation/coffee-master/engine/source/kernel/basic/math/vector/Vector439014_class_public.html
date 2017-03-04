@@ -1,0 +1,986 @@
+<HTML>
+<HEAD>
+<TITLE>Coffee - Vector4</TITLE>
+<script type="text/javascript">
+  var relPathToCommmon = "../../../../../../../common/";
+  var relPathToHelpDir = "../../../../../../../common/help/";
+</script>
+<script type="text/javascript" src="../../../../../../../common/jsdyn.js" language="JavaScript"></script>
+<script type="text/javascript" src="../../../../../../../common/js.js" language="JavaScript"></script>
+<script type="text/javascript" src="leftmenu.js" language="JavaScript"></script>
+<script type="text/javascript">
+  var toSearchPage     = "_search','../../../../../../../search";
+  Body1();
+</script>
+<div class="headerPage">Vector4</div>
+<div class="path"><a href="#" OnMouseOver="link('','../../../../../../../index',this)" class="pathLink">Documentation</A><img src="../../../../../../../common/path-arrow.gif" class="path-arrow"><a href="#" OnMouseOver="link('_dir','../../../../source0',this)" class="pathLink">engine</A><img src="../../../../../../../common/path-arrow.gif" class="path-arrow"><a href="#" OnMouseOver="link('_dir','../../../kernel0',this)" class="pathLink">kernel</A><img src="../../../../../../../common/path-arrow.gif" class="path-arrow"><a href="#" OnMouseOver="link('_dir','../../basic0',this)" class="pathLink">basic</A><img src="../../../../../../../common/path-arrow.gif" class="path-arrow"><a href="#" OnMouseOver="link('_dir','../math0',this)" class="pathLink">math</A><img src="../../../../../../../common/path-arrow.gif" class="path-arrow"><a href="#" OnMouseOver="link('_dir','vector0',this)" class="pathLink">vector</A><img src="../../../../../../../common/path-arrow.gif" class="path-arrow"><span class="pathNonLink">Vector4</span></div>
+<script type="text/javascript">
+ Body2();
+ BodyLeftMenuStart();
+WriteLeftMenu("divID750","aID750","LeftMenuActive","leftMenuLinkActive");
+ BodyLeftMenuEnd();
+ Body3();
+</script>
+<span class="tabInActive"><a href="#" OnMouseOver="linkTab('_class','Vector439014','_description',this)" class="tabLinkInActive">Description</a></span>
+<span class="tabActive"><a href="#" OnMouseOver="linkTab('_class','Vector439014','_public',this)" class="tabLinkActive">Public</a></span>
+<span class="tabInActiveGrayout"><span class="tabLinkGrayout">Protected</span></span>
+<span class="tabInActiveGrayout"><span class="tabLinkGrayout">Private</span></span>
+<span class="tabInActiveGrayout"><span class="tabLinkGrayout">Related</span></span>
+<span class="tabInActive"><a href="#" OnMouseOver="linkTab('_class','Vector439014','_all',this)" class="tabLinkInActive">All</a></span>
+<span class="tabInActive"><a href="#" OnMouseOver="linkTab('_class','Vector439014','_inheritance',this)" class="tabLinkInActive">Inheritance</a></span>
+<script type="text/javascript">
+ Body4();
+</script>
+<div id="Simple">
+<div class="contentAirTop"></div>
+<div class="padding">
+<a href="javascript:hideElement( 'Simple' );javascript:showElementStoreCookie( 'Inherited', cookieInnerNameAllInheritance );">
+<img src="../../../../../../../common/expand.gif" border=0>&nbsp;Show all inherited</a></div>
+<table cellspacing="0"cellpadding=0 border=0 class="widthAndBorderTop">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Methods</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','GetNorm4164582617',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;GetNorm&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Compute norm of the vector.');" onmouseout="return nd();">&nbsp;GetNorm</a></TD>
+<TD class="paddingNormal2"><span class="" >Compute norm of the <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a>.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','GetSquareNorm4164582617',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;GetSquareNorm&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Compute fast square norm of the vector.');" onmouseout="return nd();">&nbsp;GetSquareNorm</a></TD>
+<TD class="paddingNormal2"><span class="" >Compute fast square norm of the <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a>.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','IsNormalized4164582617',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;IsNormalized&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Check if the norm is one.');" onmouseout="return nd();">&nbsp;IsNormalized</a></TD>
+<TD class="paddingNormal2"><span class="" >Check if the norm is one.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','IsZero4164582617',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;IsZero&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Check if the norm is zero.');" onmouseout="return nd();">&nbsp;IsZero</a></TD>
+<TD class="paddingNormal2"><span class="" >Check if the norm is zero.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Normalize2017109692',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>void&nbsp;&nbsp;Normalize&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Normalize the vector.');" onmouseout="return nd();">&nbsp;Normalize</a></TD>
+<TD class="paddingNormal2"><span class="" ><a href="#" OnMouseOver="link('_member','Normalize2017109692',this)">Normalize</a> the <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a>.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator *2582236340SingleSpan"><a href="javascript:hideElement( 'overloadoperator *2582236340Single' );javascript:hideElement( 'overloadoperator *2582236340SingleSpan' );javascript:showElement( 'overloadoperator *2582236340All' );javascript:showElement( 'overloadoperator *2582236340AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator *2582236340', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator *2582236340AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator *2582236340All' );javascript:hideElement( 'overloadoperator *2582236340AllSpan' );javascript:showElement( 'overloadoperator *2582236340Single' );javascript:showElement( 'overloadoperator *2582236340SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator *2582236340', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatormu_2582236340',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;operator *&nbsp;&nbsp;(const Matrix & matrix) const',CAPTION,'<strong>Brief description</strong><BR>Create a vector which is the transformed vector by matrix.');" onmouseout="return nd();">&nbsp;operator *</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator *2582236340Single">Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the transformed <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> by <a href="#" OnMouseOver="link('_dir','../matrix/matrix0',this)">matrix</a>.<br>
+</span>
+<span id="overloadoperator *2582236340All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_1979450456',this); ">(real) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the product of self and value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_94503508',this); ">(const Vector4 &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the product of self and other.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_2582236340',this); ">(const Matrix &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the transformed <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> by <a href="#" OnMouseOver="link('_dir','../matrix/matrix0',this)">matrix</a>.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator *=1899790763SingleSpan"><a href="javascript:hideElement( 'overloadoperator *=1899790763Single' );javascript:hideElement( 'overloadoperator *=1899790763SingleSpan' );javascript:showElement( 'overloadoperator *=1899790763All' );javascript:showElement( 'overloadoperator *=1899790763AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator *=1899790763', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator *=1899790763AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator *=1899790763All' );javascript:hideElement( 'overloadoperator *=1899790763AllSpan' );javascript:showElement( 'overloadoperator *=1899790763Single' );javascript:showElement( 'overloadoperator *=1899790763SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator *=1899790763', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatormu_eq_1899790763',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator *=&nbsp;&nbsp;(const Matrix & matrix)',CAPTION,'<strong>Brief description</strong><BR>Transform by the matrix.');" onmouseout="return nd();">&nbsp;operator *=</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator *=1899790763Single"><a href="#" OnMouseOver="link('_class','../../../../system/scene/transform/Transform42087',this)">Transform</a> by the <a href="#" OnMouseOver="link('_dir','../matrix/matrix0',this)">matrix</a>.<br>
+</span>
+<span id="overloadoperator *=1899790763All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_eq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Multiply each components by value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_eq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Multiply each components by other values.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_eq_1899790763',this); ">(const Matrix &)</a></TD>
+<TD class="paddingNormal2"><span class="" ><a href="#" OnMouseOver="link('_class','../../../../system/scene/transform/Transform42087',this)">Transform</a> by the <a href="#" OnMouseOver="link('_dir','../matrix/matrix0',this)">matrix</a>.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator+94503508SingleSpan"><a href="javascript:hideElement( 'overloadoperator+94503508Single' );javascript:hideElement( 'overloadoperator+94503508SingleSpan' );javascript:showElement( 'overloadoperator+94503508All' );javascript:showElement( 'overloadoperator+94503508AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator+94503508', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator+94503508AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator+94503508All' );javascript:hideElement( 'overloadoperator+94503508AllSpan' );javascript:showElement( 'overloadoperator+94503508Single' );javascript:showElement( 'overloadoperator+94503508SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator+94503508', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatorpl_94503508',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;operator+&nbsp;&nbsp;(const Vector4 & other) const',CAPTION,'<strong>Brief description</strong><BR>Create a vector which is the sum of self and other.');" onmouseout="return nd();">&nbsp;operator+</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator+94503508Single">Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the sum of self and other.<br>
+</span>
+<span id="overloadoperator+94503508All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorpl_1979450456',this); ">(real) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the sum of self and value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorpl_94503508',this); ">(const Vector4 &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the sum of self and other.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator+=1937149219SingleSpan"><a href="javascript:hideElement( 'overloadoperator+=1937149219Single' );javascript:hideElement( 'overloadoperator+=1937149219SingleSpan' );javascript:showElement( 'overloadoperator+=1937149219All' );javascript:showElement( 'overloadoperator+=1937149219AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator+=1937149219', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator+=1937149219AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator+=1937149219All' );javascript:hideElement( 'overloadoperator+=1937149219AllSpan' );javascript:showElement( 'overloadoperator+=1937149219Single' );javascript:showElement( 'overloadoperator+=1937149219SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator+=1937149219', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatorpl_eq_1937149219',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator+=&nbsp;&nbsp;(const Vector4 & other)',CAPTION,'<strong>Brief description</strong><BR>Add values from other to each components.');" onmouseout="return nd();">&nbsp;operator+=</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator+=1937149219Single">Add values from other to each components.<br>
+</span>
+<span id="overloadoperator+=1937149219All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorpl_eq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Add value to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorpl_eq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Add values from other to each components.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator-94503508SingleSpan"><a href="javascript:hideElement( 'overloadoperator-94503508Single' );javascript:hideElement( 'overloadoperator-94503508SingleSpan' );javascript:showElement( 'overloadoperator-94503508All' );javascript:showElement( 'overloadoperator-94503508AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator-94503508', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator-94503508AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator-94503508All' );javascript:hideElement( 'overloadoperator-94503508AllSpan' );javascript:showElement( 'overloadoperator-94503508Single' );javascript:showElement( 'overloadoperator-94503508SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator-94503508', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatormi_94503508',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;operator-&nbsp;&nbsp;(const Vector4 & other) const',CAPTION,'<strong>Brief description</strong><BR>Create a vector which is the difference of self and other.');" onmouseout="return nd();">&nbsp;operator-</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator-94503508Single">Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the difference of self and other.<br>
+</span>
+<span id="overloadoperator-94503508All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_4164582617',this); ">() const</a></TD>
+<TD class="paddingNormal2"><span class="" >Get the opposite <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a>.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_1979450456',this); ">(real) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the difference of self and value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_94503508',this); ">(const Vector4 &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the difference of self and other.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator-=1937149219SingleSpan"><a href="javascript:hideElement( 'overloadoperator-=1937149219Single' );javascript:hideElement( 'overloadoperator-=1937149219SingleSpan' );javascript:showElement( 'overloadoperator-=1937149219All' );javascript:showElement( 'overloadoperator-=1937149219AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator-=1937149219', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator-=1937149219AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator-=1937149219All' );javascript:hideElement( 'overloadoperator-=1937149219AllSpan' );javascript:showElement( 'overloadoperator-=1937149219Single' );javascript:showElement( 'overloadoperator-=1937149219SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator-=1937149219', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatormi_eq_1937149219',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator-=&nbsp;&nbsp;(const Vector4 & other)',CAPTION,'<strong>Brief description</strong><BR>Substract value from other to each components.');" onmouseout="return nd();">&nbsp;operator-=</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator-=1937149219Single">Substract value from other to each components.<br>
+</span>
+<span id="overloadoperator-=1937149219All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_eq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Substract value to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_eq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Substract value from other to each components.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator/94503508SingleSpan"><a href="javascript:hideElement( 'overloadoperator/94503508Single' );javascript:hideElement( 'overloadoperator/94503508SingleSpan' );javascript:showElement( 'overloadoperator/94503508All' );javascript:showElement( 'overloadoperator/94503508AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator/94503508', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator/94503508AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator/94503508All' );javascript:hideElement( 'overloadoperator/94503508AllSpan' );javascript:showElement( 'overloadoperator/94503508Single' );javascript:showElement( 'overloadoperator/94503508SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator/94503508', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatordi_94503508',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;operator/&nbsp;&nbsp;(const Vector4 & other) const',CAPTION,'<strong>Brief description</strong><BR>Create a vector which is the div of self and other.');" onmouseout="return nd();">&nbsp;operator/</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator/94503508Single">Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the div of self and other.<br>
+</span>
+<span id="overloadoperator/94503508All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatordi_1979450456',this); ">(real) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the div of self and value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatordi_94503508',this); ">(const Vector4 &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the div of self and other.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator/=1937149219SingleSpan"><a href="javascript:hideElement( 'overloadoperator/=1937149219Single' );javascript:hideElement( 'overloadoperator/=1937149219SingleSpan' );javascript:showElement( 'overloadoperator/=1937149219All' );javascript:showElement( 'overloadoperator/=1937149219AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator/=1937149219', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator/=1937149219AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator/=1937149219All' );javascript:hideElement( 'overloadoperator/=1937149219AllSpan' );javascript:showElement( 'overloadoperator/=1937149219Single' );javascript:showElement( 'overloadoperator/=1937149219SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator/=1937149219', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatordi_eq_1937149219',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator/=&nbsp;&nbsp;(const Vector4 & other)',CAPTION,'<strong>Brief description</strong><BR>Divide each components by other values.');" onmouseout="return nd();">&nbsp;operator/=</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator/=1937149219Single">Divide each components by other values.<br>
+</span>
+<span id="overloadoperator/=1937149219All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatordi_eq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Divide each components by value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatordi_eq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Divide each components by other values.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator=1937149229SingleSpan"><a href="javascript:hideElement( 'overloadoperator=1937149229Single' );javascript:hideElement( 'overloadoperator=1937149229SingleSpan' );javascript:showElement( 'overloadoperator=1937149229All' );javascript:showElement( 'overloadoperator=1937149229AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator=1937149229', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator=1937149229AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator=1937149229All' );javascript:hideElement( 'overloadoperator=1937149229AllSpan' );javascript:showElement( 'overloadoperator=1937149229Single' );javascript:showElement( 'overloadoperator=1937149229SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator=1937149229', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatoreq_1937149229',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator=&nbsp;&nbsp;(const Vector3 & other)',CAPTION,'<strong>Brief description</strong><BR>Assign values from other to each components, and set W<BR>to default (1.0f).');" onmouseout="return nd();">&nbsp;operator=</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator=1937149229Single">Assign values from other to each components, and set W to default (1.0f).<br>
+</span>
+<span id="overloadoperator=1937149229All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatoreq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign the value to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatoreq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign values from other to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatoreq_1937149229',this); ">(const Vector3 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign values from other to each components, and set <a href="#" OnMouseOver="link('_member','W2016945052',this)">W</a> to default (1.0f).<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadoperator[]1480248571SingleSpan"><a href="javascript:hideElement( 'overloadoperator[]1480248571Single' );javascript:hideElement( 'overloadoperator[]1480248571SingleSpan' );javascript:showElement( 'overloadoperator[]1480248571All' );javascript:showElement( 'overloadoperator[]1480248571AllSpan' );javascript:setMyCookie( cookieName, 'overloadoperator[]1480248571', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadoperator[]1480248571AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadoperator[]1480248571All' );javascript:hideElement( 'overloadoperator[]1480248571AllSpan' );javascript:showElement( 'overloadoperator[]1480248571Single' );javascript:showElement( 'overloadoperator[]1480248571SingleSpan' );javascript:setMyCookie( cookieName, 'overloadoperator[]1480248571', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatorlb_rb_1480248571',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real &&nbsp;&nbsp;operator[]&nbsp;&nbsp;(uint32 component_index)',CAPTION,'<strong>Brief description</strong><BR>Get a specific component access by index.');" onmouseout="return nd();">&nbsp;operator[]</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadoperator[]1480248571Single">Get a specific <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> access by index.<br>
+</span>
+<span id="overloadoperator[]1480248571All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorlb_rb_1936201052',this); ">(uint32) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Get a specific <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> by index.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorlb_rb_1480248571',this); ">(uint32)</a></TD>
+<TD class="paddingNormal2"><span class="" >Get a specific <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> access by index.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadSet1907245647SingleSpan"><a href="javascript:hideElement( 'overloadSet1907245647Single' );javascript:hideElement( 'overloadSet1907245647SingleSpan' );javascript:showElement( 'overloadSet1907245647All' );javascript:showElement( 'overloadSet1907245647AllSpan' );javascript:setMyCookie( cookieName, 'overloadSet1907245647', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadSet1907245647AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadSet1907245647All' );javascript:hideElement( 'overloadSet1907245647AllSpan' );javascript:showElement( 'overloadSet1907245647Single' );javascript:showElement( 'overloadSet1907245647SingleSpan' );javascript:setMyCookie( cookieName, 'overloadSet1907245647', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','Set1907245647',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>void&nbsp;&nbsp;Set&nbsp;&nbsp;(const Vector3 & other, float w)',CAPTION,'<strong>Brief description</strong><BR>Assign component values from Vector3.');" onmouseout="return nd();">&nbsp;Set</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadSet1907245647Single">Assign <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> values from <a href="#" OnMouseOver="link('_class','Vector339014',this)">Vector3</a>.<br>
+</span>
+<span id="overloadSet1907245647All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Set1962611498',this); ">(real, real, real, real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> values.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Set1907245647',this); ">(const Vector3 &, float)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> values from <a href="#" OnMouseOver="link('_class','Vector339014',this)">Vector3</a>.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadVector41937149229SingleSpan"><a href="javascript:hideElement( 'overloadVector41937149229Single' );javascript:hideElement( 'overloadVector41937149229SingleSpan' );javascript:showElement( 'overloadVector41937149229All' );javascript:showElement( 'overloadVector41937149229AllSpan' );javascript:setMyCookie( cookieName, 'overloadVector41937149229', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadVector41937149229AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadVector41937149229All' );javascript:hideElement( 'overloadVector41937149229AllSpan' );javascript:showElement( 'overloadVector41937149229Single' );javascript:showElement( 'overloadVector41937149229SingleSpan' );javascript:setMyCookie( cookieName, 'overloadVector41937149229', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','Vector41937149229',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;(const Vector3 & other)',CAPTION,'<strong>Brief description</strong><BR>Construct copying other and setting W to default (1.0f).');" onmouseout="return nd();">&nbsp;Vector4</a></TD>
+<TD class="paddingNormal2">
+<span id="overloadVector41937149229Single">Construct copying other and setting W to default (1.0f).<br>
+</span>
+<span id="overloadVector41937149229All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Vector42017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Construct assigning value to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Vector41962611498',this); ">(real, real, real, real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Construct with specific <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> values.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Vector41937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Construct copying other.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Vector41937149229',this); ">(const Vector3 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Construct copying other and setting <a href="#" OnMouseOver="link('_member','W2016945052',this)">W</a> to default (1.0f).<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Attributes</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>&nbsp;</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','W2016945052',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;W ',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;W</a></TD>
+<TD class="paddingNormal2"><span class="" >&nbsp;</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','X2016945052',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;X ',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;X</a></TD>
+<TD class="paddingNormal2"><span class="" >&nbsp;</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Y2016945052',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;Y ',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;Y</a></TD>
+<TD class="paddingNormal2"><span class="" >&nbsp;</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Z2016945052',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;Z ',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;Z</a></TD>
+<TD class="paddingNormal2"><span class="" >&nbsp;</TD>
+</TR>
+</table>
+<div class="contentAirBottom"></div>
+</div>
+<div id="Inherited" style="display:none;visibility:hidden">
+<div class="contentAirTop"></div>
+<div class="padding">
+<a href="javascript:hideElement( 'Inherited' );javascript:showElementStoreCookie( 'Simple', cookieInnerNameAllInheritance );">
+<img src="../../../../../../../common/collapse.gif" border=0>&nbsp;Hide all inherited</a></div>
+<table cellspacing="0"cellpadding=0 border=0 class="widthAndBorderTop">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Static Methods</TD>
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Brief description</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Parent</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/GetClassMetaType501394175',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Class &&nbsp;&nbsp;GetClassMetaType&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Get the meta::Type of the class.');" onmouseout="return nd();">&nbsp;GetClassMetaType</a></TD>
+<TD class="paddingNormal1"><span class="" >Get the <a href="#" OnMouseOver="link('_class','../../../meta/type/Type53261',this)">meta::Type</a> of the <a href="#" OnMouseOver="link('_dir','../../../meta/type/class/class0',this)">class</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Methods</TD>
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>&nbsp;</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>&nbsp;</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/CastObject465763000',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>virtual Object *&nbsp;&nbsp;CastObject&nbsp;&nbsp;(void * object) const',CAPTION,'<strong>Brief description</strong><BR>Cast an object to the current object type, and return a meta object.');" onmouseout="return nd();">&nbsp;CastObject</a></TD>
+<TD class="paddingNormal1"><span class="" >Cast an object to the current object <a href="#" OnMouseOver="link('_dir','../../../meta/type/type0',this)">type</a>, and return a <a href="#" OnMouseOver="link('_dir','../../../meta/meta0',this)">meta</a> object.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/Clone501394175',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Object *&nbsp;&nbsp;Clone&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Create a clone of the object.');" onmouseout="return nd();">&nbsp;Clone</a></TD>
+<TD class="paddingNormal1"><span class="" >Create a clone of the object.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/Copy824492154',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>void&nbsp;&nbsp;Copy&nbsp;&nbsp;(Object & object)',CAPTION,'<strong>Brief description</strong><BR>Copy the object, the meta type require to be identical.');" onmouseout="return nd();">&nbsp;Copy</a></TD>
+<TD class="paddingNormal1"><span class="" ><a href="#" OnMouseOver="link('_member','../../../meta/Copy824492154',this)">Copy</a> the object, the <a href="#" OnMouseOver="link('_dir','../../../meta/meta0',this)">meta</a> <a href="#" OnMouseOver="link('_dir','../../../meta/type/type0',this)">type</a> require to be identical.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIGetMetaType501394175SingleSpan"><a href="javascript:hideElement( 'overloadIGetMetaType501394175Single' );javascript:hideElement( 'overloadIGetMetaType501394175SingleSpan' );javascript:showElement( 'overloadIGetMetaType501394175All' );javascript:showElement( 'overloadIGetMetaType501394175AllSpan' );javascript:setMyCookie( cookieName, 'overloadIGetMetaType501394175', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIGetMetaType501394175AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIGetMetaType501394175All' );javascript:hideElement( 'overloadIGetMetaType501394175AllSpan' );javascript:showElement( 'overloadIGetMetaType501394175Single' );javascript:showElement( 'overloadIGetMetaType501394175SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIGetMetaType501394175', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','../../../meta/GetMetaType501394175',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>virtual Class &&nbsp;&nbsp;GetMetaType&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Get the meta::Type of the object.');" onmouseout="return nd();">&nbsp;GetMetaType</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIGetMetaType501394175Single">Get the <a href="#" OnMouseOver="link('_class','../../../meta/type/Type53261',this)">meta::Type</a> of the object.<br>
+</span>
+<span id="overloadIGetMetaType501394175All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/GetMetaType501238044',this); ">() const</a></TD>
+<TD class="paddingNormal2"><span class="" >Get the const <a href="#" OnMouseOver="link('_class','../../../meta/type/Type53261',this)">meta::Type</a> of the object.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/GetMetaType501394175',this); ">()</a></TD>
+<TD class="paddingNormal2"><span class="" >Get the <a href="#" OnMouseOver="link('_class','../../../meta/type/Type53261',this)">meta::Type</a> of the object.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','GetNorm4164582617',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;GetNorm&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Compute norm of the vector.');" onmouseout="return nd();">&nbsp;GetNorm</a></TD>
+<TD class="paddingNormal1"><span class="" >Compute norm of the <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','GetSquareNorm4164582617',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;GetSquareNorm&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Compute fast square norm of the vector.');" onmouseout="return nd();">&nbsp;GetSquareNorm</a></TD>
+<TD class="paddingNormal1"><span class="" >Compute fast square norm of the <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/IsA298225323',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;IsA&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Check if the object meta::Type is a specific type.');" onmouseout="return nd();">&nbsp;IsA<></a></TD>
+<TD class="paddingNormal1"><span class="" >Check if the object <a href="#" OnMouseOver="link('_class','../../../meta/type/Type53261',this)">meta::Type</a> is a specific <a href="#" OnMouseOver="link('_dir','../../../meta/type/type0',this)">type</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/IsKindOf298225323',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;IsKindOf&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Check if the object meta::Type is inheriting of a specific type.');" onmouseout="return nd();">&nbsp;IsKindOf<></a></TD>
+<TD class="paddingNormal1"><span class="" >Check if the object <a href="#" OnMouseOver="link('_class','../../../meta/type/Type53261',this)">meta::Type</a> is inheriting of a specific <a href="#" OnMouseOver="link('_dir','../../../meta/type/type0',this)">type</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','IsNormalized4164582617',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;IsNormalized&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Check if the norm is one.');" onmouseout="return nd();">&nbsp;IsNormalized</a></TD>
+<TD class="paddingNormal1"><span class="" >Check if the norm is one.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','IsZero4164582617',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;IsZero&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Check if the norm is zero.');" onmouseout="return nd();">&nbsp;IsZero</a></TD>
+<TD class="paddingNormal1"><span class="" >Check if the norm is zero.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Normalize2017109692',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>void&nbsp;&nbsp;Normalize&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Normalize the vector.');" onmouseout="return nd();">&nbsp;Normalize</a></TD>
+<TD class="paddingNormal1"><span class="" ><a href="#" OnMouseOver="link('_member','Normalize2017109692',this)">Normalize</a> the <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/OnPropertyModified279114853',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>virtual void&nbsp;&nbsp;OnPropertyModified&nbsp;&nbsp;(const void * property)',CAPTION,'<strong>Brief description</strong><BR>Callback for when a property (attribute) has been<BR>modified from the GUI.');" onmouseout="return nd();">&nbsp;OnPropertyModified</a></TD>
+<TD class="paddingNormal1"><span class="" >Callback for when a <a href="#" OnMouseOver="link('_dir','../../../../wide/ui/property/property0',this)">property</a> (attribute) has been modified from the GUI.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator *2582236340SingleSpan"><a href="javascript:hideElement( 'overloadIoperator *2582236340Single' );javascript:hideElement( 'overloadIoperator *2582236340SingleSpan' );javascript:showElement( 'overloadIoperator *2582236340All' );javascript:showElement( 'overloadIoperator *2582236340AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator *2582236340', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator *2582236340AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator *2582236340All' );javascript:hideElement( 'overloadIoperator *2582236340AllSpan' );javascript:showElement( 'overloadIoperator *2582236340Single' );javascript:showElement( 'overloadIoperator *2582236340SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator *2582236340', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatormu_2582236340',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;operator *&nbsp;&nbsp;(const Matrix & matrix) const',CAPTION,'<strong>Brief description</strong><BR>Create a vector which is the transformed vector by matrix.');" onmouseout="return nd();">&nbsp;operator *</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator *2582236340Single">Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the transformed <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> by <a href="#" OnMouseOver="link('_dir','../matrix/matrix0',this)">matrix</a>.<br>
+</span>
+<span id="overloadIoperator *2582236340All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_1979450456',this); ">(real) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the product of self and value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_94503508',this); ">(const Vector4 &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the product of self and other.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_2582236340',this); ">(const Matrix &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the transformed <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> by <a href="#" OnMouseOver="link('_dir','../matrix/matrix0',this)">matrix</a>.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator *=1899790763SingleSpan"><a href="javascript:hideElement( 'overloadIoperator *=1899790763Single' );javascript:hideElement( 'overloadIoperator *=1899790763SingleSpan' );javascript:showElement( 'overloadIoperator *=1899790763All' );javascript:showElement( 'overloadIoperator *=1899790763AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator *=1899790763', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator *=1899790763AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator *=1899790763All' );javascript:hideElement( 'overloadIoperator *=1899790763AllSpan' );javascript:showElement( 'overloadIoperator *=1899790763Single' );javascript:showElement( 'overloadIoperator *=1899790763SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator *=1899790763', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatormu_eq_1899790763',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator *=&nbsp;&nbsp;(const Matrix & matrix)',CAPTION,'<strong>Brief description</strong><BR>Transform by the matrix.');" onmouseout="return nd();">&nbsp;operator *=</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator *=1899790763Single"><a href="#" OnMouseOver="link('_class','../../../../system/scene/transform/Transform42087',this)">Transform</a> by the <a href="#" OnMouseOver="link('_dir','../matrix/matrix0',this)">matrix</a>.<br>
+</span>
+<span id="overloadIoperator *=1899790763All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_eq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Multiply each components by value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_eq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Multiply each components by other values.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormu_eq_1899790763',this); ">(const Matrix &)</a></TD>
+<TD class="paddingNormal2"><span class="" ><a href="#" OnMouseOver="link('_class','../../../../system/scene/transform/Transform42087',this)">Transform</a> by the <a href="#" OnMouseOver="link('_dir','../matrix/matrix0',this)">matrix</a>.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator+94503508SingleSpan"><a href="javascript:hideElement( 'overloadIoperator+94503508Single' );javascript:hideElement( 'overloadIoperator+94503508SingleSpan' );javascript:showElement( 'overloadIoperator+94503508All' );javascript:showElement( 'overloadIoperator+94503508AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator+94503508', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator+94503508AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator+94503508All' );javascript:hideElement( 'overloadIoperator+94503508AllSpan' );javascript:showElement( 'overloadIoperator+94503508Single' );javascript:showElement( 'overloadIoperator+94503508SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator+94503508', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatorpl_94503508',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;operator+&nbsp;&nbsp;(const Vector4 & other) const',CAPTION,'<strong>Brief description</strong><BR>Create a vector which is the sum of self and other.');" onmouseout="return nd();">&nbsp;operator+</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator+94503508Single">Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the sum of self and other.<br>
+</span>
+<span id="overloadIoperator+94503508All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorpl_1979450456',this); ">(real) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the sum of self and value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorpl_94503508',this); ">(const Vector4 &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the sum of self and other.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator+=1937149219SingleSpan"><a href="javascript:hideElement( 'overloadIoperator+=1937149219Single' );javascript:hideElement( 'overloadIoperator+=1937149219SingleSpan' );javascript:showElement( 'overloadIoperator+=1937149219All' );javascript:showElement( 'overloadIoperator+=1937149219AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator+=1937149219', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator+=1937149219AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator+=1937149219All' );javascript:hideElement( 'overloadIoperator+=1937149219AllSpan' );javascript:showElement( 'overloadIoperator+=1937149219Single' );javascript:showElement( 'overloadIoperator+=1937149219SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator+=1937149219', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatorpl_eq_1937149219',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator+=&nbsp;&nbsp;(const Vector4 & other)',CAPTION,'<strong>Brief description</strong><BR>Add values from other to each components.');" onmouseout="return nd();">&nbsp;operator+=</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator+=1937149219Single">Add values from other to each components.<br>
+</span>
+<span id="overloadIoperator+=1937149219All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorpl_eq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Add value to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorpl_eq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Add values from other to each components.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator-94503508SingleSpan"><a href="javascript:hideElement( 'overloadIoperator-94503508Single' );javascript:hideElement( 'overloadIoperator-94503508SingleSpan' );javascript:showElement( 'overloadIoperator-94503508All' );javascript:showElement( 'overloadIoperator-94503508AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator-94503508', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator-94503508AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator-94503508All' );javascript:hideElement( 'overloadIoperator-94503508AllSpan' );javascript:showElement( 'overloadIoperator-94503508Single' );javascript:showElement( 'overloadIoperator-94503508SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator-94503508', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatormi_94503508',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;operator-&nbsp;&nbsp;(const Vector4 & other) const',CAPTION,'<strong>Brief description</strong><BR>Create a vector which is the difference of self and other.');" onmouseout="return nd();">&nbsp;operator-</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator-94503508Single">Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the difference of self and other.<br>
+</span>
+<span id="overloadIoperator-94503508All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_4164582617',this); ">() const</a></TD>
+<TD class="paddingNormal2"><span class="" >Get the opposite <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a>.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_1979450456',this); ">(real) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the difference of self and value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_94503508',this); ">(const Vector4 &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the difference of self and other.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator-=1937149219SingleSpan"><a href="javascript:hideElement( 'overloadIoperator-=1937149219Single' );javascript:hideElement( 'overloadIoperator-=1937149219SingleSpan' );javascript:showElement( 'overloadIoperator-=1937149219All' );javascript:showElement( 'overloadIoperator-=1937149219AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator-=1937149219', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator-=1937149219AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator-=1937149219All' );javascript:hideElement( 'overloadIoperator-=1937149219AllSpan' );javascript:showElement( 'overloadIoperator-=1937149219Single' );javascript:showElement( 'overloadIoperator-=1937149219SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator-=1937149219', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatormi_eq_1937149219',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator-=&nbsp;&nbsp;(const Vector4 & other)',CAPTION,'<strong>Brief description</strong><BR>Substract value from other to each components.');" onmouseout="return nd();">&nbsp;operator-=</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator-=1937149219Single">Substract value from other to each components.<br>
+</span>
+<span id="overloadIoperator-=1937149219All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_eq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Substract value to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatormi_eq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Substract value from other to each components.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator/94503508SingleSpan"><a href="javascript:hideElement( 'overloadIoperator/94503508Single' );javascript:hideElement( 'overloadIoperator/94503508SingleSpan' );javascript:showElement( 'overloadIoperator/94503508All' );javascript:showElement( 'overloadIoperator/94503508AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator/94503508', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator/94503508AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator/94503508All' );javascript:hideElement( 'overloadIoperator/94503508AllSpan' );javascript:showElement( 'overloadIoperator/94503508Single' );javascript:showElement( 'overloadIoperator/94503508SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator/94503508', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatordi_94503508',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;operator/&nbsp;&nbsp;(const Vector4 & other) const',CAPTION,'<strong>Brief description</strong><BR>Create a vector which is the div of self and other.');" onmouseout="return nd();">&nbsp;operator/</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator/94503508Single">Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the div of self and other.<br>
+</span>
+<span id="overloadIoperator/94503508All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatordi_1979450456',this); ">(real) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the div of self and value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatordi_94503508',this); ">(const Vector4 &) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Create a <a href="#" OnMouseOver="link('_dir','vector0',this)">vector</a> which is the div of self and other.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator/=1937149219SingleSpan"><a href="javascript:hideElement( 'overloadIoperator/=1937149219Single' );javascript:hideElement( 'overloadIoperator/=1937149219SingleSpan' );javascript:showElement( 'overloadIoperator/=1937149219All' );javascript:showElement( 'overloadIoperator/=1937149219AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator/=1937149219', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator/=1937149219AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator/=1937149219All' );javascript:hideElement( 'overloadIoperator/=1937149219AllSpan' );javascript:showElement( 'overloadIoperator/=1937149219Single' );javascript:showElement( 'overloadIoperator/=1937149219SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator/=1937149219', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatordi_eq_1937149219',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator/=&nbsp;&nbsp;(const Vector4 & other)',CAPTION,'<strong>Brief description</strong><BR>Divide each components by other values.');" onmouseout="return nd();">&nbsp;operator/=</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator/=1937149219Single">Divide each components by other values.<br>
+</span>
+<span id="overloadIoperator/=1937149219All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatordi_eq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Divide each components by value.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatordi_eq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Divide each components by other values.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator=1937149229SingleSpan"><a href="javascript:hideElement( 'overloadIoperator=1937149229Single' );javascript:hideElement( 'overloadIoperator=1937149229SingleSpan' );javascript:showElement( 'overloadIoperator=1937149229All' );javascript:showElement( 'overloadIoperator=1937149229AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator=1937149229', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator=1937149229AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator=1937149229All' );javascript:hideElement( 'overloadIoperator=1937149229AllSpan' );javascript:showElement( 'overloadIoperator=1937149229Single' );javascript:showElement( 'overloadIoperator=1937149229SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator=1937149229', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatoreq_1937149229',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4 &&nbsp;&nbsp;operator=&nbsp;&nbsp;(const Vector3 & other)',CAPTION,'<strong>Brief description</strong><BR>Assign values from other to each components, and set W<BR>to default (1.0f).');" onmouseout="return nd();">&nbsp;operator=</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator=1937149229Single">Assign values from other to each components, and set W to default (1.0f).<br>
+</span>
+<span id="overloadIoperator=1937149229All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatoreq_2017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign the value to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatoreq_1937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign values from other to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatoreq_1937149229',this); ">(const Vector3 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign values from other to each components, and set <a href="#" OnMouseOver="link('_member','W2016945052',this)">W</a> to default (1.0f).<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/operatoreq_eq_3936528115',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;operator==&nbsp;&nbsp;(const Object & object) const',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;operator==</a></TD>
+<TD class="paddingNormal1"><span class="" >&nbsp;</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIoperator[]1480248571SingleSpan"><a href="javascript:hideElement( 'overloadIoperator[]1480248571Single' );javascript:hideElement( 'overloadIoperator[]1480248571SingleSpan' );javascript:showElement( 'overloadIoperator[]1480248571All' );javascript:showElement( 'overloadIoperator[]1480248571AllSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator[]1480248571', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIoperator[]1480248571AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIoperator[]1480248571All' );javascript:hideElement( 'overloadIoperator[]1480248571AllSpan' );javascript:showElement( 'overloadIoperator[]1480248571Single' );javascript:showElement( 'overloadIoperator[]1480248571SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIoperator[]1480248571', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','operatorlb_rb_1480248571',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real &&nbsp;&nbsp;operator[]&nbsp;&nbsp;(uint32 component_index)',CAPTION,'<strong>Brief description</strong><BR>Get a specific component access by index.');" onmouseout="return nd();">&nbsp;operator[]</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIoperator[]1480248571Single">Get a specific <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> access by index.<br>
+</span>
+<span id="overloadIoperator[]1480248571All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorlb_rb_1936201052',this); ">(uint32) const</a></TD>
+<TD class="paddingNormal2"><span class="" >Get a specific <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> by index.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','operatorlb_rb_1480248571',this); ">(uint32)</a></TD>
+<TD class="paddingNormal2"><span class="" >Get a specific <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> access by index.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/PostSerialize524416949',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>virtual void&nbsp;&nbsp;PostSerialize&nbsp;&nbsp;(storage::MODE mode)',CAPTION,'<strong>Brief description</strong><BR>Override it to define what need to be done just after<BR>the serialization.');" onmouseout="return nd();">&nbsp;PostSerialize</a></TD>
+<TD class="paddingNormal1"><span class="" >Override it to define what need to be done just after the serialization.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/PreSerialize524416949',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>virtual void&nbsp;&nbsp;PreSerialize&nbsp;&nbsp;(storage::MODE mode)',CAPTION,'<strong>Brief description</strong><BR>Override it to define what need to be done just before<BR>the serialization.');" onmouseout="return nd();">&nbsp;PreSerialize</a></TD>
+<TD class="paddingNormal1"><span class="" >Override it to define what need to be done just before the serialization.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadISerialize849715950SingleSpan"><a href="javascript:hideElement( 'overloadISerialize849715950Single' );javascript:hideElement( 'overloadISerialize849715950SingleSpan' );javascript:showElement( 'overloadISerialize849715950All' );javascript:showElement( 'overloadISerialize849715950AllSpan' );javascript:setMyCookie( cookieName, 'overloadISerialize849715950', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadISerialize849715950AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadISerialize849715950All' );javascript:hideElement( 'overloadISerialize849715950AllSpan' );javascript:showElement( 'overloadISerialize849715950Single' );javascript:showElement( 'overloadISerialize849715950SingleSpan' );javascript:setMyCookie( cookieName, 'overloadISerialize849715950', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','../../../meta/Serialize849715950',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>virtual void&nbsp;&nbsp;Serialize&nbsp;&nbsp;(Stream & stream)',CAPTION,'<strong>Brief description</strong><BR>Override it to make a custom serialization.');" onmouseout="return nd();">&nbsp;Serialize</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadISerialize849715950Single">Override it to make a custom serialization.<br>
+</span>
+<span id="overloadISerialize849715950All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/Serialize2509161004',this); ">(storage::Path, storage::MODE)</a></TD>
+<TD class="paddingNormal2"><span class="" ><a href="#" OnMouseOver="link('_member','../../../meta/Serialize2509161004',this)">Serialize</a> the object in/from a <a href="#" OnMouseOver="link('_dir','../../../storage/file/file0',this)">file</a>.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/Serialize849715950',this); ">(Stream &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Override it to make a custom serialization.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','../../../meta/SerializeToArray522292804',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>void&nbsp;&nbsp;SerializeToArray&nbsp;&nbsp;(basic::Array< uint8 > & array, storage::MODE mode)',CAPTION,'<strong>Brief description</strong><BR>Serialize the object to-from an array.');" onmouseout="return nd();">&nbsp;SerializeToArray</a></TD>
+<TD class="paddingNormal1"><span class="" ><a href="#" OnMouseOver="link('_member','../../../meta/Serialize2509161004',this)">Serialize</a> the object to-from an <a href="#" OnMouseOver="link('_dir','../../../../wide/ui/property/array/array0',this)">array</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','../../../meta/Object53261',this); ">Object</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadISet1907245647SingleSpan"><a href="javascript:hideElement( 'overloadISet1907245647Single' );javascript:hideElement( 'overloadISet1907245647SingleSpan' );javascript:showElement( 'overloadISet1907245647All' );javascript:showElement( 'overloadISet1907245647AllSpan' );javascript:setMyCookie( cookieName, 'overloadISet1907245647', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadISet1907245647AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadISet1907245647All' );javascript:hideElement( 'overloadISet1907245647AllSpan' );javascript:showElement( 'overloadISet1907245647Single' );javascript:showElement( 'overloadISet1907245647SingleSpan' );javascript:setMyCookie( cookieName, 'overloadISet1907245647', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','Set1907245647',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>void&nbsp;&nbsp;Set&nbsp;&nbsp;(const Vector3 & other, float w)',CAPTION,'<strong>Brief description</strong><BR>Assign component values from Vector3.');" onmouseout="return nd();">&nbsp;Set</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadISet1907245647Single">Assign <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> values from <a href="#" OnMouseOver="link('_class','Vector339014',this)">Vector3</a>.<br>
+</span>
+<span id="overloadISet1907245647All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Set1962611498',this); ">(real, real, real, real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> values.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Set1907245647',this); ">(const Vector3 &, float)</a></TD>
+<TD class="paddingNormal2"><span class="" >Assign <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> values from <a href="#" OnMouseOver="link('_class','Vector339014',this)">Vector3</a>.<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><span id="overloadIVector41937149229SingleSpan"><a href="javascript:hideElement( 'overloadIVector41937149229Single' );javascript:hideElement( 'overloadIVector41937149229SingleSpan' );javascript:showElement( 'overloadIVector41937149229All' );javascript:showElement( 'overloadIVector41937149229AllSpan' );javascript:setMyCookie( cookieName, 'overloadIVector41937149229', 'show' );"><img src="../../../../../../../common/expand.gif" border=0></a></span><span id="overloadIVector41937149229AllSpan" style="display:none;visibility:hidden"><a href="javascript:hideElement( 'overloadIVector41937149229All' );javascript:hideElement( 'overloadIVector41937149229AllSpan' );javascript:showElement( 'overloadIVector41937149229Single' );javascript:showElement( 'overloadIVector41937149229SingleSpan' );javascript:setMyCookie( cookieName, 'overloadIVector41937149229', 'hide' );"><img src="../../../../../../../common/collapse.gif" border=0></a></span>
+<a href="#" onMouseOver="link('_member','Vector41937149229',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Vector4&nbsp;&nbsp;(const Vector3 & other)',CAPTION,'<strong>Brief description</strong><BR>Construct copying other and setting W to default (1.0f).');" onmouseout="return nd();">&nbsp;Vector4</a></TD>
+<TD class="paddingNormal1">
+<span id="overloadIVector41937149229Single">Construct copying other and setting W to default (1.0f).<br>
+</span>
+<span id="overloadIVector41937149229All" style="display:none;visibility:hidden">
+<table cellspacing=0 cellpadding=0 border=0 class="widthAndBorderTopLeftRight">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Variants</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Vector42017130939',this); ">(real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Construct assigning value to each components.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Vector41962611498',this); ">(real, real, real, real)</a></TD>
+<TD class="paddingNormal2"><span class="" >Construct with specific <a href="#" OnMouseOver="link('_namespace','../../../../wide/component/component3886',this)">component</a> values.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Vector41937149219',this); ">(const Vector4 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Construct copying other.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Vector41937149229',this); ">(const Vector3 &)</a></TD>
+<TD class="paddingNormal2"><span class="" >Construct copying other and setting <a href="#" OnMouseOver="link('_member','W2016945052',this)">W</a> to default (1.0f).<br>
+</TD>
+</TR>
+</table>
+</span>
+</td>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Attributes</TD>
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>&nbsp;</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>&nbsp;</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','W2016945052',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;W ',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;W</a></TD>
+<TD class="paddingNormal1"><span class="" >&nbsp;</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','X2016945052',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;X ',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;X</a></TD>
+<TD class="paddingNormal1"><span class="" >&nbsp;</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Y2016945052',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;Y ',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;Y</a></TD>
+<TD class="paddingNormal1"><span class="" >&nbsp;</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Z2016945052',this); "><img src="../../../../../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>real&nbsp;&nbsp;Z ',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;Z</a></TD>
+<TD class="paddingNormal1"><span class="" >&nbsp;</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Vector439014',this); ">Vector4</a></TD>
+</TR>
+</table>
+<div class="contentAirBottom"></div>
+</div>
+<script type="text/javascript">
+ Body5();
+Statistics("","","","","");
+ Body6();
+SetPageTab('_class','_public');
+</script>

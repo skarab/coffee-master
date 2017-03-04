@@ -1,0 +1,14 @@
+SubDir TOP ;
+SubInclude TOP : defines ;
+SubDir TOP ../source/ ;
+
+Workspace externals : externals ;
+
+LOCATE_TARGET = $(TEMP_PATH) ;
+
+C.LinkPrebuiltLibraries externals : $(PREBUILT_LIBRARIES) ;
+
+C.OutputPath externals : $(LIBRARY_PATH) ;
+C.OutputName externals : externals ;
+C.Library externals : : shared ;
+

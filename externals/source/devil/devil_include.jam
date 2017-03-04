@@ -1,0 +1,14 @@
+SubInclude TOP : $(ROOT)/externals/source/openexr/openexr_include ;
+SubInclude TOP : $(ROOT)/externals/source/libpng/libpng_include ;
+SubInclude TOP : $(ROOT)/externals/source/libjpeg/libjpeg_include ;
+SubInclude TOP : $(ROOT)/externals/source/libtiff/libtiff_include ;
+SubInclude TOP : $(ROOT)/externals/source/libmng/libmng_include ;
+SubInclude TOP : $(ROOT)/externals/source/lcms/lcms_include ;
+SubInclude TOP : $(ROOT)/externals/source/jasper/jasper_include ;
+
+C.Defines * : IL_STATIC_LIB ;
+C.Defines * : NOINLINE ;
+
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/devil/pack/
+;

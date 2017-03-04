@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/engine/build/coffee_engine_link ;
+
+C.IncludeDirectories * :
+    $(ROOT)/player/source/
+;

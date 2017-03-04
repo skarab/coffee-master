@@ -1,0 +1,4 @@
+// Default diffuse calculation
+
+color *= clamp(dot(normal, pixel_light_direction), 0.0, 1.0);   
+    

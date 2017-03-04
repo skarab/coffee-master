@@ -1,0 +1,21 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicGeometricRay3::Constructors);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicGeometricRay3)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Ray3 empty;
+            TDOG_ASSERT(empty.Origin==basic::Vector3::Zero);
+            TDOG_ASSERT(empty.Direction==basic::Vector3::XAxis);
+            
+            basic::Ray3 ray(basic::Vector3::One, basic::Vector3::YAxis);
+            TDOG_ASSERT(ray.Origin==basic::Vector3::One);
+            TDOG_ASSERT(ray.Direction==basic::Vector3::YAxis);
+        }
+        
+    }
+}
+#endif

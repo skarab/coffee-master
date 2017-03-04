@@ -1,0 +1,30 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    wide/edition/edition.h
+    wide/edition/undo/edition_undo_group.h
+    wide/edition/undo/edition_undo_group.cpp
+    wide/edition/undo/edition_undo_manager.h
+    wide/edition/undo/edition_undo_manager.cpp
+    wide/edition/undo/edition_undo_object.h
+    wide/edition/selection/edition_selection_manager.h
+    wide/edition/selection/edition_selection_manager.cpp
+    wide/edition/selection/edition_selection_undo.h
+    wide/edition/selection/edition_selection_undo.cpp
+    wide/edition/plugin/edition_plugin.h
+    wide/edition/plugin/edition_plugin.cpp
+    wide/edition/plugin/edition_plugin_node_controller.h
+    wide/edition/plugin/edition_plugin_node_controller.cpp
+    wide/edition/plugin/edition_plugin_attach_node_undo.h
+    wide/edition/plugin/edition_plugin_attach_node_undo.cpp
+    wide/edition/plugin/edition_plugin_detach_node_undo.h
+    wide/edition/plugin/edition_plugin_detach_node_undo.cpp
+    wide/edition/gizmo/edition_gizmo.h    
+    wide/edition/gizmo/edition_gizmo.cpp
+    wide/edition/gizmo/edition_gizmo_mode.h
+    wide/edition/gizmo/edition_gizmo_axis.h
+    wide/edition/gizmo/edition_gizmo_mesh.h
+    wide/edition/gizmo/edition_gizmo_mesh.cpp
+    wide/edition/gizmo/edition_gizmo_controller.h
+    wide/edition/gizmo/edition_gizmo_controller.cpp
+;

@@ -1,0 +1,88 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : devil_include ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix devil : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath devil : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName devil : devil ;
+
+C.Library devil :
+    pack/il_endian.c
+    pack/altivec_common.c
+    pack/altivec_typeconversion.c
+    pack/il_alloc.c
+    pack/il_bits.c
+    pack/il_blp.c
+    pack/il_bmp.c
+    pack/il_convbuff.c
+    pack/il_convert.c
+    pack/il_cut.c
+    pack/il_dcx.c
+    pack/il_dds-save.c
+    pack/il_dds.c
+    pack/il_devil.c
+    pack/il_dicom.c
+    pack/il_doom.c
+    pack/il_dpx.c
+    pack/il_error.c
+    pack/il_fastconv.c
+    pack/il_files.c
+    pack/il_fits.c
+    pack/il_ftx.c
+    pack/il_gif.c
+    pack/il_hdr.c
+    pack/il_header.c
+    pack/il_icns.c
+    pack/il_icon.c
+    pack/il_iff.c
+    pack/il_ilbm.c
+    pack/il_internal.c
+    pack/il_io.c
+    pack/il_iwi.c
+    pack/il_jp2.c
+    pack/il_jpeg.c
+    pack/il_lif.c
+    pack/il_main.c
+    pack/il_manip.c
+    pack/il_mdl.c
+    pack/il_mng.c
+    pack/il_mp3.c
+    pack/il_neuquant.c
+    pack/il_pal.c
+    pack/il_pcd.c
+    pack/il_pcx.c
+    pack/il_pic.c
+    pack/il_pix.c
+    pack/il_png.c
+    pack/il_pnm.c
+    pack/il_profiles.c
+    pack/il_psd.c
+    pack/il_psp.c
+    pack/il_pxr.c
+    pack/il_quantizer.c
+    pack/il_raw.c
+    pack/il_rawdata.c
+    pack/il_register.c
+    pack/il_rle.c
+    pack/il_rot.c
+    pack/il_sgi.c
+    pack/il_size.c
+    pack/il_stack.c
+    pack/il_states.c
+    pack/il_sun.c
+    pack/il_targa.c
+    pack/il_texture.c
+    pack/il_tiff.c
+    pack/il_tpl.c
+    pack/il_utility.c
+    pack/il_vtf.c
+    pack/il_wal.c
+    pack/il_wbmp.c
+    pack/il_wdp.c
+    pack/il_xpm.c
+    pack/il_exr.cpp
+    pack/il_utx.cpp
+;

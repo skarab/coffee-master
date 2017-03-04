@@ -1,0 +1,5 @@
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/freetype/pack/
+    $(ROOT)/externals/source/freetype/pack/include/
+;
+

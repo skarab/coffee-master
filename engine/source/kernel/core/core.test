@@ -1,0 +1,3 @@
+#include "kernel/core/error/core_error.test"
+#include "kernel/core/processor/core_processor.test"
+#include "kernel/core/platform/core_platform.test"

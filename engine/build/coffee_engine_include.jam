@@ -1,0 +1,13 @@
+SubInclude TOP : $(ROOT)/externals/source/glee/glee_link ;
+SubInclude TOP : $(ROOT)/externals/source/lz4/lz4_link ;
+SubInclude TOP : $(ROOT)/externals/source/zlib/zlib_link ;
+SubInclude TOP : $(ROOT)/externals/source/openal/openal_link ;
+SubInclude TOP : $(ROOT)/externals/source/libvorbis/libvorbis_link ;
+SubInclude TOP : $(ROOT)/externals/source/libogg/libogg_link ;
+SubInclude TOP : $(ROOT)/externals/source/newton/newton_link ;
+SubInclude TOP : $(ROOT)/externals/source/pthreads/pthreads_link ;
+
+C.IncludeDirectories * :
+    $(ROOT)/engine/source/
+;
+

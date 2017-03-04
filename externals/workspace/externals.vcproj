@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="externals"
+	ProjectGUID="{C15EC31F-3045-4786-9D86-D168F71B8E74}"
+	RootNamespace="externals"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="win32 Debug|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="0"
+			BuildLogFile="E:/repositories/coffee-master/externals/build/temp/win32-vs2008-debug/BuildLog.htm"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/python/python.exe E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/scripts/build.py workspace win32 debug vs2008 E:/repositories/coffee-master/externals/build/temp/source//../../../"
+				ReBuildCommandLine="E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/python/python.exe E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/scripts/build.py workspace win32 debug vs2008 full E:/repositories/coffee-master/externals/build/temp/source//../../../"
+				CleanCommandLine="E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/python/python.exe E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/scripts/build.py workspace win32 debug vs2008 clean E:/repositories/coffee-master/externals/build/temp/source//../../../"
+				Output="E:/repositories/coffee-master/binaries/win32-vs2008-debug/externals.dll"
+				PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;WINDOWS;_DEBUG;DEBUG;COFFEE_DEBUG;COFFEE_PLATFORM_X86;COFFEE_OS_WINDOWS;_WIN32_WINNT=0x0502;_WIN32_IE=0x0502;COFFEE_COMPILER_MSVC;_SCL_SECURE_NO_WARNINGS;COFFEE_COMPILER_MSVC2008"
+				IncludeSearchPath="E:/repositories/coffee-master/externals/source;E:/repositories/coffee-master"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="win32 Release|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="0"
+			BuildLogFile="E:/repositories/coffee-master/externals/build/temp/win32-vs2008-release/BuildLog.htm"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/python/python.exe E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/scripts/build.py workspace win32 release vs2008 E:/repositories/coffee-master/externals/build/temp/source//../../../"
+				ReBuildCommandLine="E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/python/python.exe E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/scripts/build.py workspace win32 release vs2008 full E:/repositories/coffee-master/externals/build/temp/source//../../../"
+				CleanCommandLine="E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/python/python.exe E:/repositories/coffee-master/externals/build/temp/source//../../../../tools/scripts/build.py workspace win32 release vs2008 clean E:/repositories/coffee-master/externals/build/temp/source//../../../"
+				Output="E:/repositories/coffee-master/binaries/win32-vs2008-release/externals.dll"
+				PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;WINDOWS;NDEBUG;COFFEE_RELEASE;COFFEE_PLATFORM_X86;COFFEE_OS_WINDOWS;_WIN32_WINNT=0x0502;_WIN32_IE=0x0502;COFFEE_COMPILER_MSVC;_SCL_SECURE_NO_WARNINGS;COFFEE_COMPILER_MSVC2008"
+				IncludeSearchPath="E:/repositories/coffee-master/externals/source;E:/repositories/coffee-master"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<File
+			RelativePath="E:\repositories\coffee-master\externals\build\Jamfile.jam"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

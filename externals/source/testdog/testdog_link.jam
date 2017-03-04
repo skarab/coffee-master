@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/testdog/testdog_include ;
+
+PREBUILT_LIBRARIES +=
+    testdog
+;

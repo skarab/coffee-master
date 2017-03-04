@@ -1,0 +1,4 @@
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/testdog/pack/
+    $(ROOT)/externals/source/testdog/pack/inc/testdog
+;

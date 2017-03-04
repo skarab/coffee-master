@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/libtiff/libtiff_include ;
+
+PREBUILT_LIBRARIES +=
+    libtiff
+;

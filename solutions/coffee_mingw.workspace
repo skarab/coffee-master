@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+<Workspace title="Coffee">
+<Project filename="../engine/workspace/coffee_engine.cbp" />
+<Project filename="../player/workspace/coffee_player.cbp" />
+<Project filename="../editor/workspace/coffee_editor.cbp" />
+<Project filename="../applications/player/workspace/player.cbp" />
+<Project filename="../applications/editor/workspace/coffee.cbp" />
+<Project filename="../applications/builder/workspace/builder.cbp" />
+<Project filename="../unittest/workspace/unittest.cbp" />
+<Project filename="../externals/workspace/externals.cbp" />
+</Workspace>
+</CodeBlocks_workspace_file>

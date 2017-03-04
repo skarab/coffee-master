@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/zlib/zlib_include ;
+
+PREBUILT_LIBRARIES +=
+    zlib
+;

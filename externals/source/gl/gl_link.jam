@@ -1,0 +1,7 @@
+SubInclude TOP : $(ROOT)/externals/source/gl/gl_include ;
+
+PREBUILT_LIBRARIES +=
+    opengl32
+    glu32
+;
+

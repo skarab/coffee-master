@@ -1,0 +1,74 @@
+local rc_nologo ;
+local RC ;
+
+switch $(COMPILER.$(PLATFORM)) {
+    case vs2012 :
+        local key = HKEY_LOCAL_MACHINE SOFTWARE Microsoft "Windows Kits" "Installed Roots" KitsRoot ;
+        MSSDK = [ W32_GETREG $(key) ] ;
+        MSSDK ?= $(MSVCNT) ;
+        MSSDK_BINDIR = "$(MSSDK)/bin/x86" ;
+        MSSDK_STDHDRS = "$(MSVCNT)/include" "$(MSSDK)/include/shared" "$(MSSDK)/include/um" "$(MSSDK)/include/winrt" ;
+        MSSDK_LINKDIRECTORIES = "$(MSVCNT)/lib" "$(MSSDK)/lib/win8/um/x86" ;
+        RC = $(MSSDK)/bin/x86/rc ;
+        rc_nologo = /nologo ;
+
+    case vs2010 :
+        local key = HKEY_LOCAL_MACHINE SOFTWARE Microsoft "Microsoft SDKs" Windows v7.0a InstallationFolder ;
+        MSSDK = [ W32_GETREG $(key) ] ;
+        MSSDK ?= $(MSVCNT) ;
+        MSSDK_BINDIR = "$(MSSDK)/bin" ;
+        MSSDK_STDHDRS = "$(MSVCNT)/include" "$(MSSDK)/Include" ;
+        MSSDK_LINKDIRECTORIES = "$(MSVCNT)/lib" "$(MSSDK)/Lib" ;
+        RC = $(MSSDK)/bin/RC ;
+        rc_nologo = /nologo ;
+
+    case vs2008 :
+        local key = HKEY_LOCAL_MACHINE SOFTWARE Microsoft "Microsoft SDKs" Windows CurrentInstallFolder ;
+        MSSDK = [ W32_GETREG $(key) ] ;
+        MSSDK ?= $(MSVCNT) ;
+        MSSDK_BINDIR = "$(MSSDK)/bin" ;
+        MSSDK_STDHDRS = "$(MSVCNT)/include" "$(MSSDK)/Include" ;
+        MSSDK_LINKDIRECTORIES = "$(MSVCNT)/lib" "$(MSSDK)/Lib" ;
+        RC = $(MSSDK)/bin/RC ;
+
+    case vs2005 :
+        MSSDK = $(MSVCNT) ;
+        MSSDK_BINDIR = "$(MSSDK)/bin" ;
+        MSSDK_STDHDRS = "$(MSSDK)/include" "$(MSSDK)/PlatformSDK/Include" ;
+        MSSDK_LINKDIRECTORIES = "$(MSVCNT)/lib" "$(MSVCNT)/PlatformSDK/lib" ;
+        RC = $(MSSDK)/bin/RC ;
+
+    case vs2003 :
+        MSSDK = $(MSVCNT) ;
+        MSSDK_BINDIR = "$(MSSDK)/bin" ;
+        MSSDK_STDHDRS = "$(MSSDK)/include" "$(MSSDK)/PlatformSDK/Include" ;
+        MSSDK_LINKDIRECTORIES = "$(MSVCNT)/lib" "$(MSVCNT)/PlatformSDK/lib" ;
+        RC = $(MSSDK)/bin/RC ;
+
+    case vs2002 :
+        MSSDK = $(MSVCNT) ;
+        MSSDK_BINDIR = "$(MSSDK)/bin" ;
+        MSSDK_STDHDRS = "$(MSSDK)/include" "$(MSSDK)/PlatformSDK/Include" ;
+        MSSDK_LINKDIRECTORIES = "$(MSVCNT)/lib" "$(MSVCNT)/PlatformSDK/lib" ;
+        RC = $(MSSDK)/bin/RC ;
+
+    case vc6 :
+        local key = HKEY_LOCAL_MACHINE SOFTWARE Microsoft MicrosoftSDK Directories "Install Dir" ;
+        MSSDK = [ W32_GETREG $(key) ] ;
+        MSSDK ?= $(MSVCNT) ;
+        MSSDK_BINDIR = "$(MSSDK)/bin" ;
+        MSSDK_STDHDRS = "$(MSSDK)/include" "$(MSVCNT)/Include" ;
+        MSSDK_LINKDIRECTORIES = "$(MSSDK)/Lib" "$(MSVCNT)/Lib" ;
+        RC = $(MSVCNT)/../Common/MSDev98/Bin/rc ;
+}
+
+MSVCBIN							?= $(MSVCNT)/bin/ ;
+C.AR 		= $(MSVCBIN)lib ;
+C.CC 		= $(MSVCBIN)cl ;
+C.C++ 	= $(MSVCBIN)cl ;
+C.LINK 	= $(MSVCBIN)link ;
+C.MT 		= $(MSSDK_BINDIR)/mt ;
+C.RC 		= $(RC) ;
+C.RC_NOLOGO  = $(rc_nologo) ;
+C.STDHDRS 	?= $(MSSDK_STDHDRS) ;
+C.STDLINKDIRECTORIES ?= $(MSSDK_LINKDIRECTORIES) ;

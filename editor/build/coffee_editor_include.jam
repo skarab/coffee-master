@@ -1,0 +1,13 @@
+SubInclude TOP : $(ROOT)/engine/build/coffee_engine_link ;
+SubInclude TOP : $(ROOT)/externals/source/gl/gl_link ;
+SubInclude TOP : $(ROOT)/externals/source/devil/devil_link ;
+SubInclude TOP : $(ROOT)/externals/source/freetype/freetype_link ;
+SubInclude TOP : $(ROOT)/externals/source/lzma/lzma_link ;
+SubInclude TOP : $(ROOT)/externals/source/hdrloader/hdrloader_link ;
+SubInclude TOP : $(ROOT)/externals/source/libvorbis/libvorbis_link ;
+SubInclude TOP : $(ROOT)/externals/source/libogg/libogg_link ;
+SubInclude TOP : $(ROOT)/externals/source/assimp/assimp_link ;
+
+C.IncludeDirectories * :
+    $(ROOT)/editor/source/
+;

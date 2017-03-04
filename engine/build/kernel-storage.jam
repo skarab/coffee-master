@@ -1,0 +1,38 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    kernel/storage/storage.h
+    kernel/storage/data/storage_data.h
+    kernel/storage/data/storage_data.cpp
+    kernel/storage/data/storage_mode.h
+    kernel/storage/data/storage_stream.h
+    kernel/storage/data/storage_stream.cpp
+    kernel/storage/file/storage_file.h
+    kernel/storage/file/storage_file.cpp
+    kernel/storage/file/storage_file_access.h
+    kernel/storage/file/storage_file_access.cpp
+    kernel/storage/file/storage_file_access_windows.h
+    kernel/storage/file/storage_file_access_windows.hpp
+    kernel/storage/logical/storage_logical_entry.h
+    kernel/storage/logical/storage_logical_entry.cpp
+    kernel/storage/logical/storage_logical_file_entry.h
+    kernel/storage/logical/storage_logical_file_entry.cpp
+    kernel/storage/logical/storage_logical_mount_point.h
+    kernel/storage/logical/storage_logical_mount_point.cpp
+    kernel/storage/logical/storage_path.h
+    kernel/storage/logical/storage_path.cpp
+    kernel/storage/logical/storage_system.h
+    kernel/storage/logical/storage_system.cpp
+    kernel/storage/logical/local_folder/storage_local_folder.h
+    kernel/storage/logical/local_folder/storage_local_folder.cpp
+    kernel/storage/pack/storage_pack.h
+    kernel/storage/pack/storage_pack.cpp
+    kernel/storage/pack/storage_pack_file.h
+    kernel/storage/pack/storage_pack_file.cpp
+    kernel/storage/physical/storage_physical_path.h
+    kernel/storage/physical/storage_physical_path.cpp
+    kernel/storage/physical/storage_physical_system.h
+    kernel/storage/physical/storage_physical_system.cpp
+    kernel/storage/physical/storage_physical_system_unix.hpp
+    kernel/storage/physical/storage_physical_system_windows.hpp
+;    

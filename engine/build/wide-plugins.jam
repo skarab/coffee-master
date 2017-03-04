@@ -1,0 +1,20 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    wide/plugins/plugins.h
+    wide/plugins/plugins_library.h
+    wide/plugins/plugins_library.cpp
+    wide/plugins/plugins_module.h
+    wide/plugins/plugins_module.cpp
+    wide/plugins/plugins_object.h
+    wide/plugins/plugins_object.cpp
+    wide/plugins/plugins_object_windows.h
+    wide/plugins/plugins_object_windows.hpp
+    wide/plugins/macros/plugins_macros.h
+    wide/plugins/macros/plugins_macros_component_windows.h
+    wide/plugins/macros/plugins_macros_windows.h
+    wide/plugins/component/plugins_component_library.h
+    wide/plugins/component/plugins_component_library.cpp
+    wide/plugins/component/plugins_component.h
+    wide/plugins/component/plugins_component.cpp
+;

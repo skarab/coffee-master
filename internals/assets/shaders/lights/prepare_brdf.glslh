@@ -1,0 +1,8 @@
+// Set-up BRDF inputs
+
+vec3 color = texture2DRect(base_texture, uv).xyz;
+vec3 eye_vector = normalize(-view_vector);
+vec2 material = texture2DRect(material_texture, uv).xy;
+vec3 specular_color = mix(vec3(1.0), color, material.x)*0.8;
+color = mix(color, vec3(0.0), material.x);
+float specular_power = 1.0+(1.0-material.y*material.y*0.9)*24.0;

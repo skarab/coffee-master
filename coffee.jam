@@ -1,0 +1,70 @@
+C.Defines * : COFFEE_DEBUG : debug ;
+C.Defines * : COFFEE_RELEASE : release ;
+C.Defines * : COFFEE_PLATFORM_X86 ;
+
+C.BatchCompileGroupSize * : 12 ;
+C.RuntimeType * : static ;
+
+# External libraries
+
+PREBUILT_LIBRARIES =
+    kernel32
+    shell32
+    gdi32
+    user32
+    comctl32
+    comdlg32    
+    ole32
+;
+
+C.LinkDirectories * :
+    $(ROOT)/binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG)
+    $(ROOT)/externals/lib/$(PLATFORM)-$(COMPILER)-$(CONFIG)
+;
+
+# Compiler specifics
+
+C.Defines * : COFFEE_OS_WINDOWS ;
+C.Defines * : _WIN32_WINNT=0x0502 ;
+C.Defines * : _WIN32_IE=0x0502 ;
+
+if $(COMPILER) = mingw
+{
+    C.Defines * : COFFEE_COMPILER_MINGW ;
+    C.Defines * : _POSIX_VER ;
+    
+    COFFEE_FLAGS = ;
+    C.LinkPrebuiltLibraries : * : moldname : ;
+    C.LinkFlags * : -mwindows -Wl,--enable-auto-import -lstdc++ : debug : ;
+    C.LinkFlags * : -mwindows -Wl,--enable-auto-import -lstdc++ -s : release : ;
+    C.C++Flags * : -mwindows -march=i486 -m32 -msse -msse2 -msse3 -mmmx -Wno-conversion-null -Wno-attributes : debug : ;
+    C.C++Flags * : -mwindows -march=i486 -m32 -msse -msse2 -msse3 -mmmx -Wno-conversion-null -Wno-attributes -s : release : ;
+}
+else
+{
+    C.C++Flags * : /Oy- : ;
+    C.Defines * : COFFEE_COMPILER_MSVC ;
+    C.Defines * : _SCL_SECURE_NO_WARNINGS ;
+    
+    COFFEE_FLAGS = "/FI\"$(ROOT)/tools/targetsxs/targetsxs.h\"" ;
+    
+    if $(COMPILER.$(PLATFORM)) = vs2005
+    {
+        C.Defines * : COFFEE_COMPILER_MSVC2005 ;
+    }
+
+    if $(COMPILER.$(PLATFORM)) = vs2008
+    {
+        C.Defines * : COFFEE_COMPILER_MSVC2008 ;
+    }
+
+    if $(COMPILER.$(PLATFORM)) = vs2010
+    {
+        C.Defines * : COFFEE_COMPILER_MSVC2010 ;
+    }
+    
+    if $(COMPILER.$(PLATFORM)) = vs2012
+    {
+        C.Defines * : COFFEE_COMPILER_MSVC2012 ;
+    }
+}

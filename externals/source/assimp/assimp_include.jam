@@ -1,0 +1,9 @@
+SubInclude TOP : $(ROOT)/externals/source/zlib/zlib_include ;
+
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/assimp/pack/code/
+    $(ROOT)/externals/source/assimp/pack/code/BoostWorkaround/
+    $(ROOT)/externals/source/assimp/pack/include/
+;
+
+C.Defines * : ASSIMP_BUILD_NO_OWN_ZLIB ;

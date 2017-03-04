@@ -1,0 +1,139 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicMathVector2::Constructors);
+    REGISTER_TEST(BasicMathVector2::Comparators);
+    REGISTER_TEST(BasicMathVector2::GetDotProduct);
+    REGISTER_TEST(BasicMathVector2::GetCrossProduct);
+    REGISTER_TEST(BasicMathVector2::IsColinear);
+    REGISTER_TEST(BasicMathVector2::IsOrthogonal);
+    REGISTER_TEST(BasicMathVector2::GetOrthogonal);
+    REGISTER_TEST(BasicMathVector2::GetAngle);
+    REGISTER_TEST(BasicMathVector2::Normalize);    
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicMathVector2)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Vector2 vector_null;
+            TDOG_ASSERT(vector_null.X==0.0f);
+            TDOG_ASSERT(vector_null.Y==0.0f);
+            
+            basic::Vector2 vector_one(1.0f);
+            TDOG_ASSERT(vector_one.X==1.0f);
+            TDOG_ASSERT(vector_one.Y==1.0f);
+            
+            basic::Vector2 vector_minus_one(-1.0f);
+            TDOG_ASSERT(vector_minus_one.X==-1.0f);
+            TDOG_ASSERT(vector_minus_one.Y==-1.0f);
+            
+            basic::Vector2 vector_custom(12.0f, -4.0f);
+            TDOG_ASSERT(vector_custom.X==12.0f);
+            TDOG_ASSERT(vector_custom.Y==-4.0f);
+            
+            basic::Vector2 vector(basic::Vector2i(1, 4));
+            TDOG_ASSERT(vector.X==1.0f);
+            TDOG_ASSERT(vector.Y==4.0f);
+        }
+
+        TDOG_TEST_CASE(Comparators)
+        {
+            basic::Vector2 one(1.0f);
+            basic::Vector2 two(2.0f);
+            TDOG_ASSERT(one==one);
+            TDOG_ASSERT(two==two);
+            TDOG_ASSERT(one!=two);
+            TDOG_ASSERT(one<two);
+            TDOG_ASSERT(one<=two);
+            TDOG_ASSERT(two>one);
+            TDOG_ASSERT(two>=one);
+            
+            two /= 2.0f;
+            TDOG_ASSERT(one==two);
+            
+            one *= 2.0f;
+            TDOG_ASSERT(one>two);
+            one.X = two.X;
+            TDOG_ASSERT(one>=two);
+            TDOG_ASSERT(two<=one);           
+        }
+        
+        TDOG_TEST_CASE(GetDotProduct)
+        {
+            basic::Vector2 yvector(0.0f, 1.0f);
+            basic::Vector2 xvector(1.0f, 0.0f);
+            TDOG_ASSERT(IsEqual(yvector.GetDotProduct(yvector), 1.0f));
+            TDOG_ASSERT(IsEqual(yvector.GetDotProduct(xvector), 0.0f));
+            TDOG_ASSERT(IsEqual(yvector.GetDotProduct(-yvector), -1.0f));
+        }
+        
+        TDOG_TEST_CASE(GetCrossProduct)
+        {
+            basic::Vector2 xvector(1.0f, 0.0f);
+            basic::Vector2 yvector(0.0f, 1.0f);
+            TDOG_ASSERT(IsEqual(xvector.GetCrossProduct(xvector), 0.0f));
+            TDOG_ASSERT(IsEqual(yvector.GetCrossProduct(yvector), 0.0f));
+            TDOG_ASSERT(IsEqual(xvector.GetCrossProduct(yvector), 1.0f));
+            TDOG_ASSERT(IsEqual(yvector.GetCrossProduct(xvector), -1.0f));
+        }
+        
+        TDOG_TEST_CASE(IsColinear)
+        {
+            basic::Vector2 yvector(0.0f, 1.0f);
+            basic::Vector2 xvector(1.0f, 0.0f);
+            TDOG_ASSERT(yvector.IsColinear(yvector));
+            TDOG_ASSERT(yvector.IsColinear(-yvector));
+            TDOG_ASSERT(xvector.IsColinear(xvector));
+            TDOG_ASSERT(xvector.IsColinear(-xvector));
+            TDOG_ASSERT(!yvector.IsColinear(xvector));
+            TDOG_ASSERT(!yvector.IsColinear(-xvector));
+        }
+        
+        TDOG_TEST_CASE(IsOrthogonal)
+        {
+            basic::Vector2 yvector(0.0f, 1.0f);
+            basic::Vector2 xvector(1.0f, 0.0f);
+            TDOG_ASSERT(!yvector.IsOrthogonal(yvector));
+            TDOG_ASSERT(!yvector.IsOrthogonal(-yvector));
+            TDOG_ASSERT(!xvector.IsOrthogonal(xvector));
+            TDOG_ASSERT(!xvector.IsOrthogonal(-xvector));
+            TDOG_ASSERT(yvector.IsOrthogonal(xvector));
+            TDOG_ASSERT(yvector.IsOrthogonal(-xvector));
+        }
+        
+        TDOG_TEST_CASE(GetOrthogonal)
+        {
+            basic::Vector2 yvector(0.0f, 1.0f);
+            basic::Vector2 xvector(1.0f, 0.0f);
+            TDOG_ASSERT(yvector.GetOrthogonal(true)==xvector);
+            TDOG_ASSERT(yvector.GetOrthogonal(false)==-xvector);
+            TDOG_ASSERT(xvector.GetOrthogonal(true)==-yvector);
+            TDOG_ASSERT(xvector.GetOrthogonal(false)==yvector);
+        }
+        
+        TDOG_TEST_CASE(GetAngle)
+        {
+            basic::Vector2 yvector(0.0f, 1.0f);
+            basic::Vector2 xvector(1.0f, 0.0f);
+            TDOG_ASSERT(xvector.GetAngle()==0.0f);
+            TDOG_ASSERT(yvector.GetAngle()==Pi/2.0f);
+            TDOG_ASSERT(xvector.GetAngle(yvector)==Pi/2.0f);
+            TDOG_ASSERT(yvector.GetAngle(xvector)==-Pi/2.0f);
+        }
+        
+        TDOG_TEST_CASE(Normalize)
+        {
+            basic::Vector2 vector(0.0f, 1.0f);
+            TDOG_ASSERT(IsEqual(vector.GetNorm(), 1.0f));
+            TDOG_ASSERT(vector.IsNormalized());
+            vector.Normalize();
+            TDOG_ASSERT(vector.IsNormalized());
+            vector.Set(5.0f, 12.0f);
+            TDOG_ASSERT(!vector.IsNormalized());
+            vector.Normalize();
+            TDOG_ASSERT(vector.IsNormalized());            
+        }
+
+    }
+}
+#endif

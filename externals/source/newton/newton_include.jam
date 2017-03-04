@@ -1,0 +1,17 @@
+SubInclude TOP : $(ROOT)/externals/source/pthreads/pthreads_include ;
+
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/newton/pack/core/
+    $(ROOT)/externals/source/newton/pack/physics/
+    $(ROOT)/externals/source/newton/pack/newton/
+    $(ROOT)/externals/source/newton/pack/joints/
+    $(ROOT)/externals/source/newton/pack/math/
+;
+
+C.Defines * : _NEWTON_STATIC_LIB ;
+
+if $(COMPILER) = mingw
+{
+    C.Defines * : DG_SCALAR_VECTOR_CLASS ;
+    C.Defines * : DG_DISABLE_ASSERT ;
+}

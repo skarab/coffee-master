@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/gl/gl_include ;
+
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/glee/pack/
+;

@@ -1,0 +1,56 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicMathVector2i::Constructors);
+    REGISTER_TEST(BasicMathVector2i::Comparators);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicMathVector2i)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Vector2i vector_null;
+            TDOG_ASSERT(vector_null.X==0);
+            TDOG_ASSERT(vector_null.Y==0);
+            
+            basic::Vector2i vector_one(1);
+            TDOG_ASSERT(vector_one.X==1);
+            TDOG_ASSERT(vector_one.Y==1);
+            
+            basic::Vector2i vector_minus_one(-1);
+            TDOG_ASSERT(vector_minus_one.X==-1);
+            TDOG_ASSERT(vector_minus_one.Y==-1);
+            
+            basic::Vector2i vector_custom(12, -4);
+            TDOG_ASSERT(vector_custom.X==12);
+            TDOG_ASSERT(vector_custom.Y==-4);
+            
+            basic::Vector2i vector(basic::Vector2(1.2f, 0.8f));
+            TDOG_ASSERT(vector.X==1);
+            TDOG_ASSERT(vector.Y==0);
+        }
+
+        TDOG_TEST_CASE(Comparators)
+        {
+            basic::Vector2i one(1);
+            basic::Vector2i two(2);
+            TDOG_ASSERT(one==one);
+            TDOG_ASSERT(two==two);
+            TDOG_ASSERT(one!=two);
+            TDOG_ASSERT(one<two);
+            TDOG_ASSERT(one<=two);
+            TDOG_ASSERT(two>one);
+            TDOG_ASSERT(two>=one);
+            
+            two /= 2;
+            TDOG_ASSERT(one==two);
+            
+            one *= 2;
+            TDOG_ASSERT(one>two);
+            one.X = two.X;
+            TDOG_ASSERT(one>=two);
+            TDOG_ASSERT(two<=one);           
+        }
+
+    }
+}
+#endif

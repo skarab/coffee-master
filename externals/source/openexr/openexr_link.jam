@@ -1,0 +1,6 @@
+SubInclude TOP : $(ROOT)/externals/source/openexr/openexr_include ;
+
+PREBUILT_LIBRARIES +=
+    openexr
+    zlib
+;

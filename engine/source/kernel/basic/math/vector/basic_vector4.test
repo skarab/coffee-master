@@ -1,0 +1,51 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicMathVector4::Constructors);
+    REGISTER_TEST(BasicMathVector4::Normalize);    
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicMathVector4)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Vector4 vector_null;
+            TDOG_ASSERT(vector_null.X==0.0f);
+            TDOG_ASSERT(vector_null.Y==0.0f);
+            TDOG_ASSERT(vector_null.Z==0.0f);
+            TDOG_ASSERT(vector_null.W==0.0f);
+            
+            basic::Vector4 vector_one(1.0f);
+            TDOG_ASSERT(vector_one.X==1.0f);
+            TDOG_ASSERT(vector_one.Y==1.0f);
+            TDOG_ASSERT(vector_one.Z==1.0f);
+            TDOG_ASSERT(vector_one.W==1.0f);
+            
+            basic::Vector4 vector_minus_one(-1.0f);
+            TDOG_ASSERT(vector_minus_one.X==-1.0f);
+            TDOG_ASSERT(vector_minus_one.Y==-1.0f);
+            TDOG_ASSERT(vector_minus_one.Z==-1.0f);
+            TDOG_ASSERT(vector_minus_one.W==-1.0f);
+            
+            basic::Vector4 vector_custom(12.0f, -4.0f, 5.0f, 4.0f);
+            TDOG_ASSERT(vector_custom.X==12.0f);
+            TDOG_ASSERT(vector_custom.Y==-4.0f);
+            TDOG_ASSERT(vector_custom.Z==5.0f);
+            TDOG_ASSERT(vector_custom.W==4.0f);
+        }
+
+        TDOG_TEST_CASE(Normalize)
+        {
+            basic::Vector4 vector(0.0f, 1.0f, 0.0f, 1.0f);
+            TDOG_ASSERT(IsEqual(vector.GetNorm(), 1.0f));
+            TDOG_ASSERT(vector.IsNormalized());
+            vector.Normalize();
+            TDOG_ASSERT(vector.IsNormalized());
+            vector.Set(5.0f, 12.0f, 42.0f, -8.0f);
+            TDOG_ASSERT(!vector.IsNormalized());
+            vector.Normalize();
+            TDOG_ASSERT(vector.IsNormalized());            
+        }
+
+    }
+}
+#endif

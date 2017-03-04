@@ -1,0 +1,34 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    system/physics/physics.h
+    system/physics/physics_world.h
+    system/physics/physics_world.cpp
+    system/physics/physics_collision.h
+    system/physics/physics_component.h
+    system/physics/physics_component.cpp
+    system/physics/material/physics_material.h
+    system/physics/material/physics_material.cpp
+    system/physics/scene/physics_scene.h
+    system/physics/scene/physics_scene.cpp
+    system/physics/rigid_body/physics_rigid_body.h
+    system/physics/rigid_body/physics_rigid_body.cpp
+    system/physics/rigid_body/physics_rigid_body_shape.h
+    system/physics/rigid_body/physics_rigid_body_shape.cpp
+    system/physics/rigid_body/box/physics_box.h
+    system/physics/rigid_body/box/physics_box.cpp
+    system/physics/rigid_body/sphere/physics_sphere.h
+    system/physics/rigid_body/sphere/physics_sphere.cpp
+    system/physics/rigid_body/cone/physics_cone.h
+    system/physics/rigid_body/cone/physics_cone.cpp
+    system/physics/rigid_body/capsule/physics_capsule.h
+    system/physics/rigid_body/capsule/physics_capsule.cpp
+    system/physics/rigid_body/cylinder/physics_cylinder.h
+    system/physics/rigid_body/cylinder/physics_cylinder.cpp
+    system/physics/rigid_body/chamfer_cylinder/physics_chamfer_cylinder.h
+    system/physics/rigid_body/chamfer_cylinder/physics_chamfer_cylinder.cpp
+    system/physics/rigid_body/mesh/physics_mesh.h
+    system/physics/rigid_body/mesh/physics_mesh.cpp
+    system/physics/rigid_body/character/physics_character.h
+    system/physics/rigid_body/character/physics_character.cpp
+;

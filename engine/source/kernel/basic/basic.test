@@ -1,0 +1,2 @@
+#include "kernel/basic/math/basic_math.test"
+#include "kernel/basic/geometric/basic_geometric.test"

@@ -1,0 +1,83 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : libvorbis_include ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix libvorbis : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath libvorbis : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName libvorbis : libvorbis ;
+
+SOURCES =
+    pack/include/vorbis/codec.h
+    pack/include/vorbis/vorbisenc.h
+    pack/include/vorbis/vorbisfile.h
+    pack/lib/backends.h
+    pack/lib/bitrate.h
+    pack/lib/codebook.h
+    pack/lib/codec_internal.h
+    pack/lib/envelope.h
+    pack/lib/highlevel.h
+    pack/lib/lookup.h
+    pack/lib/lookup_data.h
+    pack/lib/lpc.h
+    pack/lib/lsp.h
+    pack/lib/masking.h
+    pack/lib/mdct.h
+    pack/lib/misc.h
+    pack/lib/os.h
+    pack/lib/psy.h
+    pack/lib/registry.h
+    pack/lib/scales.h
+    pack/lib/smallft.h
+    pack/lib/window.h
+    pack/lib/books/coupled/res_books_51.h
+    pack/lib/books/coupled/res_books_stereo.h
+    pack/lib/books/floor/floor_books.h
+    pack/lib/books/uncoupled/res_books_uncoupled.h
+    pack/lib/modes/floor_all.h
+    pack/lib/modes/psych_11.h
+    pack/lib/modes/psych_16.h
+    pack/lib/modes/psych_44.h
+    pack/lib/modes/psych_8.h
+    pack/lib/modes/residue_16.h
+    pack/lib/modes/residue_44.h
+    pack/lib/modes/residue_44p51.h
+    pack/lib/modes/residue_44u.h
+    pack/lib/modes/residue_8.h
+    pack/lib/modes/setup_11.h
+    pack/lib/modes/setup_16.h
+    pack/lib/modes/setup_22.h
+    pack/lib/modes/setup_32.h
+    pack/lib/modes/setup_44.h
+    pack/lib/modes/setup_44p51.h
+    pack/lib/modes/setup_44u.h
+    pack/lib/modes/setup_8.h
+    pack/lib/modes/setup_X.h
+    pack/lib/analysis.c
+    pack/lib/barkmel.c
+    pack/lib/bitrate.c
+    pack/lib/block.c
+    pack/lib/codebook.c
+    pack/lib/envelope.c
+    pack/lib/floor0.c
+    pack/lib/floor1.c
+    pack/lib/info.c
+    pack/lib/lookup.c
+    pack/lib/lpc.c
+    pack/lib/lsp.c
+    pack/lib/mapping0.c
+    pack/lib/mdct.c
+    pack/lib/psy.c
+    pack/lib/registry.c
+    pack/lib/res0.c
+    pack/lib/sharedbook.c
+    pack/lib/smallft.c
+    pack/lib/synthesis.c
+    pack/lib/vorbisenc.c
+    pack/lib/vorbisfile.c
+    pack/lib/window.c
+;
+
+C.Library libvorbis : $(SOURCES) ;

@@ -1,0 +1,6 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    wide/project/project.h
+    wide/project/project.cpp
+;

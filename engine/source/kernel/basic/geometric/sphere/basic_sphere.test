@@ -1,0 +1,61 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicGeometricSphere::Constructors);
+    REGISTER_TEST(BasicGeometricSphere::Operators);
+    REGISTER_TEST(BasicGeometricSphere::IsPointInside);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicGeometricSphere)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Sphere empty_sphere;
+            TDOG_ASSERT(empty_sphere.IsEmpty());
+            TDOG_ASSERT(empty_sphere.Center==basic::Vector3::Zero);
+            TDOG_ASSERT(empty_sphere.Radius==0.0f);
+            
+            basic::Sphere a_sphere(basic::Vector3::One, 0.0f);
+            TDOG_ASSERT(a_sphere.IsEmpty());
+            TDOG_ASSERT(a_sphere.Center==basic::Vector3::One);
+            TDOG_ASSERT(a_sphere.Radius==0.0f);
+            
+            basic::Sphere one_sphere(basic::Vector3::Zero, 1.0f);
+            TDOG_ASSERT(!one_sphere.IsEmpty());            
+            TDOG_ASSERT(one_sphere.Center==basic::Vector3::Zero);
+            TDOG_ASSERT(one_sphere.Radius==1.0f);
+        }
+        
+        TDOG_TEST_CASE(Operators)
+        {
+            basic::Sphere empty_sphere;
+            basic::Sphere a_sphere(basic::Vector3::One, 0.0f);
+            basic::Sphere one_sphere(basic::Vector3::Zero, 1.0f);
+            TDOG_ASSERT(empty_sphere==empty_sphere);
+            TDOG_ASSERT(a_sphere==a_sphere);
+            TDOG_ASSERT(one_sphere==one_sphere);
+            TDOG_ASSERT(a_sphere!=empty_sphere);
+            TDOG_ASSERT(one_sphere!=a_sphere);
+            
+            one_sphere *= basic::Matrix();
+            TDOG_ASSERT(one_sphere.Center==basic::Vector3::Zero);
+            TDOG_ASSERT(one_sphere.Radius==1.0f);
+        }
+        
+        TDOG_TEST_CASE(IsPointInside)
+        {
+            basic::Sphere empty_sphere;
+            TDOG_ASSERT(!empty_sphere.IsPointInside(basic::Vector3::Zero));
+            
+            basic::Sphere one_sphere(basic::Vector3::Zero, 1.0f);
+            TDOG_ASSERT(one_sphere.IsPointInside(basic::Vector3::Zero));
+            TDOG_ASSERT(one_sphere.IsPointInside(basic::Vector3(1.0f, 0.0f, 0.0f)));
+            TDOG_ASSERT(one_sphere.IsPointInside(basic::Vector3(0.0f, 1.0f, 0.0f)));
+            TDOG_ASSERT(one_sphere.IsPointInside(basic::Vector3(0.0f, 0.0f, 1.0f)));
+            TDOG_ASSERT(!one_sphere.IsPointInside(basic::Vector3(1.1f, 0.0f, 0.0f)));
+            TDOG_ASSERT(!one_sphere.IsPointInside(basic::Vector3(0.0f, 1.1f, 0.0f)));
+            TDOG_ASSERT(!one_sphere.IsPointInside(basic::Vector3(0.0f, 0.0f, 1.1f)));
+        }
+
+    }
+}
+#endif

@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/zlib/zlib_include ;
+
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/libpng/pack/
+;

@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+<TITLE>Coffee - Engine</TITLE>
+<script type="text/javascript">
+  var relPathToCommmon = "../../../common/";
+  var relPathToHelpDir = "../../../common/help/";
+</script>
+<script type="text/javascript" src="../../../common/jsdyn.js" language="JavaScript"></script>
+<script type="text/javascript" src="../../../common/js.js" language="JavaScript"></script>
+<script type="text/javascript" src="leftmenu.js" language="JavaScript"></script>
+<script type="text/javascript">
+  var toSearchPage     = "_search','../../../search";
+  Body1();
+</script>
+<div class="headerPage">Engine</div>
+<div class="path"><a href="#" OnMouseOver="link('','../../../index',this)" class="pathLink">Documentation</A><img src="../../../common/path-arrow.gif" class="path-arrow"><a href="#" OnMouseOver="link('_dir','source0',this)" class="pathLink">engine</A><img src="../../../common/path-arrow.gif" class="path-arrow"><span class="pathNonLink">Engine</span></div>
+<script type="text/javascript">
+ Body2();
+ BodyLeftMenuStart();
+WriteLeftMenu("divID723","aID723","LeftMenuActive","leftMenuLinkActive");
+ BodyLeftMenuEnd();
+ Body3();
+</script>
+<span class="tabInActive"><a href="#" OnMouseOver="linkTab('_class','Engine3886','_description',this)" class="tabLinkInActive">Description</a></span>
+<span class="tabActive"><a href="#" OnMouseOver="linkTab('_class','Engine3886','_public',this)" class="tabLinkActive">Public</a></span>
+<span class="tabInActiveGrayout"><span class="tabLinkGrayout">Protected</span></span>
+<span class="tabInActiveGrayout"><span class="tabLinkGrayout">Private</span></span>
+<span class="tabInActiveGrayout"><span class="tabLinkGrayout">Related</span></span>
+<span class="tabInActive"><a href="#" OnMouseOver="linkTab('_class','Engine3886','_all',this)" class="tabLinkInActive">All</a></span>
+<span class="tabInActiveGrayout"><span class="tabLinkGrayout">Inheritance</span></span>
+<script type="text/javascript">
+ Body4();
+</script>
+<div id="Simple">
+<div class="contentAirTop"></div>
+<div class="padding">
+<a href="javascript:hideElement( 'Simple' );javascript:showElementStoreCookie( 'Inherited', cookieInnerNameAllInheritance );">
+<img src="../../../common/expand.gif" border=0>&nbsp;Show all inherited</a></div>
+<table cellspacing="0"cellpadding=0 border=0 class="widthAndBorderTop">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Methods</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Brief description</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Engine1802457994',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Engine&nbsp;&nbsp;(const char * command_line, uint32 modes)',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;Engine</a></TD>
+<TD class="paddingNormal2"><span class="" >&nbsp;</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','GetApplicationName1400650818',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>char *&nbsp;&nbsp;GetApplicationName&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Get the application name, based on the running executable.');" onmouseout="return nd();">&nbsp;GetApplicationName</a></TD>
+<TD class="paddingNormal2"><span class="" >Get the <a href="#" OnMouseOver="link('_dir','wide/application/application0',this)">application</a> name, based on the running executable.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','GetApplicationPath1400650818',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>char *&nbsp;&nbsp;GetApplicationPath&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Get the application path, based on the running executable.');" onmouseout="return nd();">&nbsp;GetApplicationPath</a></TD>
+<TD class="paddingNormal2"><span class="" >Get the <a href="#" OnMouseOver="link('_dir','wide/application/application0',this)">application</a> <a href="#" OnMouseOver="link('_dir','system/scene/path/path0',this)">path</a>, based on the running executable.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','HasMode1618483105',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;HasMode&nbsp;&nbsp;(const RUN_MODE & mode) const',CAPTION,'<strong>Brief description</strong><BR>Retrieve if a particular coffee::RUN_MODE is active.');" onmouseout="return nd();">&nbsp;HasMode</a></TD>
+<TD class="paddingNormal2"><span class="" >Retrieve if a particular <a href="#" OnMouseOver="link('_member','RUN_MODE50712',this)">coffee::RUN_MODE</a> is active.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Quit2168077025',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>void&nbsp;&nbsp;Quit&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Safely ask to quit the application.');" onmouseout="return nd();">&nbsp;Quit</a></TD>
+<TD class="paddingNormal2"><span class="" >Safely ask to quit the <a href="#" OnMouseOver="link('_dir','wide/application/application0',this)">application</a>.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Update2168077025',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;Update&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Update the registered modules through the<BR>coffee::shell::ModuleManager.');" onmouseout="return nd();">&nbsp;Update</a></TD>
+<TD class="paddingNormal2"><span class="" ><a href="#" OnMouseOver="link('_member','Update2168077025',this)">Update</a> the registered modules through the <a href="#" OnMouseOver="link('_class','kernel/shell/module/ModuleManager41582',this)">coffee::shell::ModuleManager</a>.<br>
+</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','ti_Engine2168077025',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>~Engine&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;~Engine</a></TD>
+<TD class="paddingNormal2"><span class="" >&nbsp;</TD>
+</TR>
+</table>
+<div class="contentAirBottom"></div>
+</div>
+<div id="Inherited" style="display:none;visibility:hidden">
+<div class="contentAirTop"></div>
+<div class="padding">
+<a href="javascript:hideElement( 'Inherited' );javascript:showElementStoreCookie( 'Simple', cookieInnerNameAllInheritance );">
+<img src="../../../common/collapse.gif" border=0>&nbsp;Hide all inherited</a></div>
+<table cellspacing="0"cellpadding=0 border=0 class="widthAndBorderTop">
+<TR VALIGN="top">
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Methods</TD>
+<TD class="paddingHeadMultiColumn1"><span class="" align=left>Brief description</TD>
+<TD class="paddingHeadMultiColumn2"><span class="" align=left>Parent</TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Engine1802457994',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>Engine&nbsp;&nbsp;(const char * command_line, uint32 modes)',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;Engine</a></TD>
+<TD class="paddingNormal1"><span class="" >&nbsp;</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Engine3886',this); ">Engine</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','GetApplicationName1400650818',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>char *&nbsp;&nbsp;GetApplicationName&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Get the application name, based on the running executable.');" onmouseout="return nd();">&nbsp;GetApplicationName</a></TD>
+<TD class="paddingNormal1"><span class="" >Get the <a href="#" OnMouseOver="link('_dir','wide/application/application0',this)">application</a> name, based on the running executable.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Engine3886',this); ">Engine</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','GetApplicationPath1400650818',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>char *&nbsp;&nbsp;GetApplicationPath&nbsp;&nbsp;() const',CAPTION,'<strong>Brief description</strong><BR>Get the application path, based on the running executable.');" onmouseout="return nd();">&nbsp;GetApplicationPath</a></TD>
+<TD class="paddingNormal1"><span class="" >Get the <a href="#" OnMouseOver="link('_dir','wide/application/application0',this)">application</a> <a href="#" OnMouseOver="link('_dir','system/scene/path/path0',this)">path</a>, based on the running executable.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Engine3886',this); ">Engine</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','HasMode1618483105',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;HasMode&nbsp;&nbsp;(const RUN_MODE & mode) const',CAPTION,'<strong>Brief description</strong><BR>Retrieve if a particular coffee::RUN_MODE is active.');" onmouseout="return nd();">&nbsp;HasMode</a></TD>
+<TD class="paddingNormal1"><span class="" >Retrieve if a particular <a href="#" OnMouseOver="link('_member','RUN_MODE50712',this)">coffee::RUN_MODE</a> is active.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Engine3886',this); ">Engine</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Quit2168077025',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>void&nbsp;&nbsp;Quit&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Safely ask to quit the application.');" onmouseout="return nd();">&nbsp;Quit</a></TD>
+<TD class="paddingNormal1"><span class="" >Safely ask to quit the <a href="#" OnMouseOver="link('_dir','wide/application/application0',this)">application</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Engine3886',this); ">Engine</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','Update2168077025',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>bool&nbsp;&nbsp;Update&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>Update the registered modules through the<BR>coffee::shell::ModuleManager.');" onmouseout="return nd();">&nbsp;Update</a></TD>
+<TD class="paddingNormal1"><span class="" ><a href="#" OnMouseOver="link('_member','Update2168077025',this)">Update</a> the registered modules through the <a href="#" OnMouseOver="link('_class','kernel/shell/module/ModuleManager41582',this)">coffee::shell::ModuleManager</a>.<br>
+</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Engine3886',this); ">Engine</a></TD>
+</TR>
+<TR VALIGN="top">
+<TD class="paddingNormal1"><span class="" align=left><a href="#" onMouseOver="link('_member','ti_Engine2168077025',this); "><img src="../../../common/info.gif" border=0 onmouseover="overLibDiagram();return overlib('<strong>Syntax</strong><BR>~Engine&nbsp;&nbsp;()',CAPTION,'<strong>Brief description</strong><BR>');" onmouseout="return nd();">&nbsp;~Engine</a></TD>
+<TD class="paddingNormal1"><span class="" >&nbsp;</TD>
+<TD class="paddingNormal2"><span class="" align=left><a href="#" onMouseOver="link('_class','Engine3886',this); ">Engine</a></TD>
+</TR>
+</table>
+<div class="contentAirBottom"></div>
+</div>
+<script type="text/javascript">
+ Body5();
+Statistics("","","","","");
+ Body6();
+SetPageTab('_class','_public');
+</script>

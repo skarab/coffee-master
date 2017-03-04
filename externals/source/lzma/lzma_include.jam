@@ -1,0 +1,9 @@
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/lzma/pack/
+    $(ROOT)/externals/source/lzma/pack/C/
+    $(ROOT)/externals/source/lzma/pack/C/Util/
+    $(ROOT)/externals/source/lzma/pack/CPP/
+    $(ROOT)/externals/source/lzma/pack/CPP/7zip/
+    $(ROOT)/externals/source/lzma/pack/CPP/Common/
+    $(ROOT)/externals/source/lzma/pack/CPP/Windows/
+;

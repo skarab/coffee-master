@@ -1,0 +1,11 @@
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/openal/pack/
+    $(ROOT)/externals/source/openal/pack/Alc/
+    $(ROOT)/externals/source/openal/pack/include/
+    $(ROOT)/externals/source/openal/pack/include/AL/
+    $(ROOT)/externals/source/openal/pack/OpenAL32/
+    $(ROOT)/externals/source/openal/pack/OpenAL32/Include/
+    $(ROOT)/externals/source/openal/pack/utils/
+;
+
+C.Defines * : AL_LIBTYPE_STATIC ;

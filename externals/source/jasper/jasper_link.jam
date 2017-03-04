@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/jasper/jasper_include ;
+
+PREBUILT_LIBRARIES +=
+    jasper
+;

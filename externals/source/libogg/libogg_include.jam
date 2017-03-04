@@ -1,0 +1,4 @@
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/libogg/pack/include/
+    $(ROOT)/externals/source/libogg/pack/src/
+;

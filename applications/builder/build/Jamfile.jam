@@ -1,0 +1,31 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : $(ROOT)/engine/build/coffee_engine_link ;
+
+BINARY_PATH = ../../../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+TEMP_PATH = ../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPostfix * : ;
+
+SubDir TOP ../source/ ;
+
+SOURCES =
+    builder_includes.h
+    builder.h
+    builder.cpp
+    builder_widget.h
+    builder_widget.cpp
+    builder_modes.h
+    builder_modes.cpp
+    builder_config.h
+    builder_config.cpp
+;
+
+AutoSourceGroup builder : $(SOURCES) ;
+Workspace builder : builder ;
+
+C.LinkPrebuiltLibraries builder : $(PREBUILT_LIBRARIES) ;
+
+LOCATE_TARGET = $(TEMP_PATH) ;
+C.OutputPath builder : $(BINARY_PATH) ;
+C.OutputName builder : builder ;
+C.Application builder : $(SOURCES) : windows ;

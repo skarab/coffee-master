@@ -1,0 +1,13 @@
+SubInclude TOP : ../../coffee ;
+
+C.IncludeDirectories * :
+    ../../
+;
+
+C.LinkDirectories * :
+;
+
+LIBRARY_PATH = ../../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+TEMP_PATH = ../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+
+C.OutputPostfix * : ;

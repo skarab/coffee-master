@@ -1,0 +1,11 @@
+SubInclude TOP : $(ROOT)/engine/build/coffee_engine_link ;
+
+C.Defines * : COFFEE_PLAYER ;
+
+PREBUILT_LIBRARIES +=
+    coffee_player
+;
+
+C.IncludeDirectories * :
+    $(ROOT)/player/source/
+;

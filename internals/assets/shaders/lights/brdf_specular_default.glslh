@@ -1,0 +1,6 @@
+// Default specular calculation
+
+vec3 spec_vector = reflect(-pixel_light_direction, normal);
+float spec_factor = max(dot(eye_vector, spec_vector), 0.0);
+spec_factor *= step(0.0, dot(pixel_light_direction, normal)); 
+color += specular_color*pow(spec_factor, specular_power);    

@@ -1,0 +1,13 @@
+SubInclude TOP : $(ROOT)/externals/source/devil/devil_include ;
+
+PREBUILT_LIBRARIES +=
+    devil
+    jasper
+    lcms
+    libpng
+    openexr
+    zlib
+    libtiff
+    libmng
+    libjpeg
+;

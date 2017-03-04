@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coffee", "..\applications\editor\workspace\coffee.vcxproj", "{419CA018-245E-42F9-ABD6-3052E11DC35A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coffee_engine", "..\engine\workspace\coffee_engine.vcxproj", "{CA9E8AE6-639E-492F-AE45-E212E311E351}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coffee_player", "..\player\workspace\coffee_player.vcxproj", "{76E63257-E388-48E9-82C0-DBDDEDA45B40}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coffee_editor", "..\editor\workspace\coffee_editor.vcxproj", "{8B6FBA88-5D7F-48D7-AB56-4BD9BCA83624}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "player", "..\applications\player\workspace\player.vcxproj", "{FB1FEADA-18F0-47B6-8A4E-6A4E03D5B64A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "builder", "..\applications\builder\workspace\builder.vcproj", "{677A2934-1D2E-42CF-A7E1-FAF35E7E834A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unittest", "..\unittest\workspace\unittest.vcxproj", "{48AD3D47-57E1-4D05-8991-3432939FE502}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "externals", "..\externals\workspace\externals.vcxproj", "{37F5960C-CA8E-415D-8D6A-9519B1D7B3A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

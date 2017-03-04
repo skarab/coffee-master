@@ -1,0 +1,40 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+
+LIBRARY_PATH = ../../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+TEMP_PATH = ../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPostfix * : ;
+
+SubInclude TOP : coffee_player_include ;
+SubDir TOP ../source/ ;
+
+SOURCES =
+    coffee_player_includes.h
+    coffee_player.h
+    coffee_player.cpp
+;
+
+PREBUILT_LIBRARIES =
+    kernel32
+    gdi32
+    user32
+    comctl32
+    ole32
+    coffee_engine
+;
+
+AutoSourceGroup coffee_player : $(SOURCES) ;
+Workspace coffee_player : coffee_player ;
+
+if $(COMPILER) = mingw
+{
+    C.LinkFlags coffee_player : -Wl,--out-implib,$(LIBRARY_PATH)/coffee_player.dll.a ;
+}
+
+C.LinkPrebuiltLibraries coffee_player : $(PREBUILT_LIBRARIES) ;
+
+LOCATE_TARGET = $(TEMP_PATH) ;
+
+C.OutputPath coffee_player : $(LIBRARY_PATH) ;
+C.OutputName coffee_player : coffee_player ;
+C.Library coffee_player : $(SOURCES) : shared ;

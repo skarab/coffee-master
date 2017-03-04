@@ -1,0 +1,79 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : openal_include ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix openal : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath openal : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName openal : openal ;
+
+SOURCES =
+    pack/config.h
+    pack/Alc/mixer_defs.h
+    pack/examples/common/alffmpeg.h
+    pack/examples/common/alhelpers.h
+    pack/include/AL/al.h
+    pack/include/AL/alc.h
+    pack/include/AL/alext.h
+    pack/include/AL/efx-creative.h
+    pack/include/AL/efx-presets.h
+    pack/include/AL/efx.h
+    pack/OpenAL32/Include/alAuxEffectSlot.h
+    pack/OpenAL32/Include/alBuffer.h
+    pack/OpenAL32/Include/alEffect.h
+    pack/OpenAL32/Include/alError.h
+    pack/OpenAL32/Include/alFilter.h
+    pack/OpenAL32/Include/alListener.h
+    pack/OpenAL32/Include/alMain.h
+    pack/OpenAL32/Include/alSource.h
+    pack/OpenAL32/Include/alThunk.h
+    pack/OpenAL32/Include/alu.h
+    pack/OpenAL32/Include/bs2b.h
+    pack/Alc/ALc.c
+    pack/Alc/alcConfig.c
+    pack/Alc/alcDedicated.c
+    pack/Alc/alcEcho.c
+    pack/Alc/alcModulator.c
+    pack/Alc/alcReverb.c
+    pack/Alc/alcRing.c
+    pack/Alc/alcThread.c
+    pack/Alc/ALu.c
+    pack/Alc/bs2b.c
+    pack/Alc/helpers.c
+    pack/Alc/hrtf.c
+    pack/Alc/mixer.c
+    pack/Alc/mixer_c.c
+    pack/Alc/mixer_inc.c
+    pack/Alc/panning.c
+    pack/Alc/backends/loopback.c
+    pack/Alc/backends/null.c
+    pack/Alc/backends/wave.c
+    pack/OpenAL32/alAuxEffectSlot.c
+    pack/OpenAL32/alBuffer.c
+    pack/OpenAL32/alEffect.c
+    pack/OpenAL32/alError.c
+    pack/OpenAL32/alExtension.c
+    pack/OpenAL32/alFilter.c
+    pack/OpenAL32/alListener.c
+    pack/OpenAL32/alSource.c
+    pack/OpenAL32/alState.c
+    pack/OpenAL32/alThunk.c    
+;
+
+if $(COMPILER) = androidndk
+{
+    # nothing
+}
+else if $(COMPILER) = mingw
+{
+    SOURCES += pack/Alc/backends/winmm.c ;
+}
+else
+{
+    SOURCES += pack/Alc/backends/winmm.c ;
+    SOURCES += pack/Alc/mixer_sse.c ;
+}
+
+C.Library openal : $(SOURCES) ;

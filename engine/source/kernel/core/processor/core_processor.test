@@ -1,0 +1,51 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(CoreProcessor::MemoryCopy);
+    REGISTER_TEST(CoreProcessor::MemorySet);
+    REGISTER_TEST(CoreProcessor::MemoryCompare);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(CoreProcessor)
+    {
+        TDOG_TEST_CASE(MemoryCopy)
+        {
+            int32 input[] = { 0, 1, 2, 3 };
+            int32 output[4];
+            core::Processor::Get().MemoryCopy(output, input, sizeof(int32)*4);
+
+            for (int32 index=0 ; index<4 ; ++index)
+            {
+                TDOG_ASSERT(output[index]==input[index]);
+            }
+        }
+
+        TDOG_TEST_CASE(MemorySet)
+        {
+            int16 buffer[] = { 0, 1, 2, 3 };
+            core::Processor::Get().MemorySet(buffer, 0, sizeof(int16)*3);
+
+            for (int32 index=0 ; index<3 ; ++index)
+            {
+                TDOG_ASSERT(buffer[index]==0);
+            }
+
+            TDOG_ASSERT(buffer[3]==3);
+        }
+
+        TDOG_TEST_CASE(MemoryCompare)
+        {
+            int32 buffer_a[] = { 0, 1, 2, 3 };
+            int32 buffer_b[] = { 0, 1, 2, 3 };
+            int32 buffer_c[] = { 0, 1, 2, 2 };
+            int32 buffer_d[] = { 1, 1, 2, 3 };
+
+            TDOG_ASSERT(core::Processor::Get().MemoryCompare(buffer_a, buffer_a, sizeof(int32)*4)==0);
+            TDOG_ASSERT(core::Processor::Get().MemoryCompare(buffer_a, buffer_b, sizeof(int32)*4)==0);
+            TDOG_ASSERT(core::Processor::Get().MemoryCompare(buffer_a, buffer_c, sizeof(int32)*4)>0);
+            TDOG_ASSERT(core::Processor::Get().MemoryCompare(buffer_c, buffer_a, sizeof(int32)*4)<0);
+            TDOG_ASSERT(core::Processor::Get().MemoryCompare(buffer_a, buffer_d, sizeof(int32)*4)<0);
+            TDOG_ASSERT(core::Processor::Get().MemoryCompare(buffer_c, buffer_d, sizeof(int32)*4)<0);
+        }
+    }
+}
+#endif

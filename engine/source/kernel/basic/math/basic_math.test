@@ -1,0 +1,8 @@
+#include "kernel/basic/math/functions/basic_functions.test"
+#include "kernel/basic/math/angle/basic_angle.test"
+#include "kernel/basic/math/curve/basic_curve_bezier.test"
+#include "kernel/basic/math/euler/basic_euler.test"
+#include "kernel/basic/math/vector/basic_vector2i.test"
+#include "kernel/basic/math/vector/basic_vector2.test"
+#include "kernel/basic/math/vector/basic_vector3.test"
+#include "kernel/basic/math/vector/basic_vector4.test"

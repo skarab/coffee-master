@@ -1,0 +1,6 @@
+SubInclude TOP : $(ROOT)/externals/source/openal/openal_include ;
+
+PREBUILT_LIBRARIES +=
+    openal
+    winmm
+;

@@ -1,0 +1,7 @@
+SubInclude TOP : $(ROOT)/externals/source/libjpeg/libjpeg_include ;
+
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/jasper/pack/
+    $(ROOT)/externals/source/jasper/pack/include/
+    $(ROOT)/externals/source/jasper/pack/include/jasper/
+;

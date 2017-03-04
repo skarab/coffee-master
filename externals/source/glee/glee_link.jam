@@ -1,0 +1,6 @@
+SubInclude TOP : $(ROOT)/externals/source/glee/glee_include ;
+SubInclude TOP : $(ROOT)/externals/source/gl/gl_link ;
+
+PREBUILT_LIBRARIES +=
+    glee
+;

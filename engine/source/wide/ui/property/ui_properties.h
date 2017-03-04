@@ -1,0 +1,30 @@
+#ifndef _COFFEE_UI_PROPERTIES_H_
+#define _COFFEE_UI_PROPERTIES_H_
+
+#include "coffee_includes.h"
+#include "kernel/basic/basic.h"
+#include "wide/ui/property/scalar/ui_property_uint32_enum_multi.h"
+#include "wide/ui/property/scalar/ui_property_bool.h"
+#include "wide/ui/property/scalar/ui_property_int8.h"
+#include "wide/ui/property/scalar/ui_property_uint8.h"
+#include "wide/ui/property/scalar/ui_property_int16.h"
+#include "wide/ui/property/scalar/ui_property_uint16.h"
+#include "wide/ui/property/scalar/ui_property_int32.h"
+#include "wide/ui/property/scalar/ui_property_uint32.h"
+#include "wide/ui/property/scalar/ui_property_real.h"
+#include "wide/ui/property/scalar/ui_property_enum.h"
+#include "wide/ui/property/array/ui_property_array_combo.h"
+#include "wide/ui/property/array/ui_property_array.h"
+#include "wide/ui/property/basic/ui_property_color.h"
+#include "wide/ui/property/basic/ui_property_vector3f.h"
+#include "wide/ui/property/basic/ui_property_euler.h"
+#include "wide/ui/property/basic/ui_property_quaternion.h"
+#include "wide/ui/property/basic/ui_property_base.h"
+#include "wide/ui/property/basic/ui_property_image.h"
+#include "wide/ui/property/basic/text/ui_property_string.h"
+#include "wide/ui/property/basic/text/ui_property_text.h"
+#include "wide/ui/property/ui_property_list.h"
+#include "wide/ui/property/resource/ui_property_resource.h"
+#include "wide/ui/property/resource/ui_property_resource_property.h"
+
+#endif

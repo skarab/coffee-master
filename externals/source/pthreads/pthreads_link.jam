@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/pthreads/pthreads_include ;
+
+PREBUILT_LIBRARIES +=
+    pthreads
+;

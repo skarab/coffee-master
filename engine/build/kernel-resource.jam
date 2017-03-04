@@ -1,0 +1,39 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    kernel/resource/resources.h
+    kernel/resource/resource_object.h
+    kernel/resource/resource_object.cpp
+    kernel/resource/resource_manager.h
+    kernel/resource/resource_manager.cpp
+    kernel/resource/chunk/resource_chunk.h
+    kernel/resource/chunk/resource_chunk.cpp
+    kernel/resource/chunk/resource_chunk_state.h
+    kernel/resource/chunk/resource_chunk_state.cpp
+    kernel/resource/library/resource_library.h
+    kernel/resource/library/resource_library.cpp
+    kernel/resource/lod/resource_lod.h
+    kernel/resource/lod/resource_lod.cpp
+    kernel/resource/lod/resource_lod_parameters.h
+    kernel/resource/lod/resource_lod_parameters.cpp
+    kernel/resource/lod/resource_lod_state.h
+    kernel/resource/lod/resource_lod_state.cpp
+    kernel/resource/macros/resource_macros.h
+    kernel/resource/mode/resource_mode.h
+    kernel/resource/mode/resource_mode.cpp
+    kernel/resource/process/resource_process.h
+    kernel/resource/process/resource_process.cpp
+    kernel/resource/property/resource_property.h
+    kernel/resource/property/resource_property_base.h
+    kernel/resource/property/resource_property_base.cpp
+    kernel/resource/property/resource_property_flag.h
+    kernel/resource/property/resource_property_flag.cpp
+    kernel/resource/property/resource_property_template.h
+    kernel/resource/property/resource_property.hpp
+    kernel/resource/state/resource_state.h
+    kernel/resource/state/resource_state.cpp
+    kernel/resource/handler/resource_handler.h
+    kernel/resource/handler/resource_handler.hpp
+    kernel/resource/handler/resource_handler_template.h
+    kernel/resource/handler/resource_handler_state.h
+;    

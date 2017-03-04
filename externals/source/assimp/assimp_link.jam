@@ -1,0 +1,6 @@
+SubInclude TOP : $(ROOT)/externals/source/assimp/assimp_include ;
+
+PREBUILT_LIBRARIES +=
+    zlib
+    assimp
+;

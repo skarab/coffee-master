@@ -1,0 +1,9 @@
+/** \mainpage Documentation
+Welcome to the API documentation of Coffee.
+
+In Coffee, all coding is done using C/C++, in a user friendly way, that's why you may refer this as the Scripting Documentation.
+It describes all Coffee classes, useful when writing custom components/plugins.
+
+Please note that this documentation is generated right from the code base, the documented parts will increase overtime.
+For any question, just mail to support@coffee3d.net
+*/

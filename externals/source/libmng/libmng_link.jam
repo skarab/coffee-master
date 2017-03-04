@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/libmng/libmng_include ;
+
+PREBUILT_LIBRARIES +=
+    libmng
+;

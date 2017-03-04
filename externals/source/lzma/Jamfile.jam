@@ -1,0 +1,82 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : lzma_include ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix lzma : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath lzma : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName lzma : lzma ;
+
+SOURCES =
+    pack/C/7z.h
+    pack/C/7zAlloc.h
+    pack/C/7zBuf.h
+    pack/C/7zCrc.h
+    pack/C/7zFile.h
+    pack/C/7zVersion.h
+    pack/C/Alloc.h
+    pack/C/Bcj2.h
+    pack/C/Bra.h
+    pack/C/CpuArch.h
+    pack/C/Delta.h
+    pack/C/LzFind.h
+    pack/C/LzFindMt.h
+    pack/C/LzHash.h
+    pack/C/Lzma2Dec.h
+    pack/C/Lzma2Enc.h
+    pack/C/Lzma86.h
+    pack/C/LzmaDec.h
+    pack/C/LzmaEnc.h
+    pack/C/LzmaLib.h
+    pack/C/MtCoder.h
+    pack/C/Ppmd.h
+    pack/C/Ppmd7.h
+    pack/C/RotateDefs.h
+    pack/C/Sha256.h
+    pack/C/Threads.h
+    pack/C/Types.h
+    pack/C/Xz.h
+    pack/C/XzCrc64.h
+    pack/C/XzEnc.h    
+    pack/C/7zAlloc.c
+    pack/C/7zBuf.c
+    pack/C/7zBuf2.c
+    pack/C/7zCrc.c
+    pack/C/7zCrcOpt.c
+    pack/C/7zDec.c
+    pack/C/7zFile.c
+    pack/C/7zIn.c
+    pack/C/7zStream.c
+    pack/C/Alloc.c
+    pack/C/Bcj2.c
+    pack/C/Bra.c
+    pack/C/Bra86.c
+    pack/C/BraIA64.c
+    pack/C/CpuArch.c
+    pack/C/Delta.c
+    pack/C/LzFind.c
+    pack/C/LzFindMt.c
+    pack/C/Lzma2Dec.c
+    pack/C/Lzma2Enc.c
+    pack/C/Lzma86Dec.c
+    pack/C/Lzma86Enc.c
+    pack/C/LzmaDec.c
+    pack/C/LzmaEnc.c
+    pack/C/LzmaLib.c
+    pack/C/MtCoder.c
+    pack/C/Ppmd7.c
+    pack/C/Ppmd7Dec.c
+    pack/C/Ppmd7Enc.c
+    pack/C/Sha256.c
+    pack/C/Threads.c
+    pack/C/Xz.c
+    pack/C/XzCrc64.c
+    pack/C/XzDec.c
+    pack/C/XzEnc.c
+    pack/C/XzIn.c
+    pack/C/Util/7z/7zMain.c
+;
+
+C.Library lzma : $(SOURCES) ;

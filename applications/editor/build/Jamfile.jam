@@ -1,0 +1,24 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : $(ROOT)/editor/build/coffee_editor_link ;
+
+BINARY_PATH = ../../../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+TEMP_PATH = ../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPostfix * : ;
+
+SubDir TOP ../source/ ;
+
+SOURCES =
+    editor.h
+    editor.cpp
+;
+
+AutoSourceGroup coffee : $(SOURCES) ;
+Workspace coffee : coffee ;
+
+C.LinkPrebuiltLibraries coffee : $(PREBUILT_LIBRARIES) ;
+
+LOCATE_TARGET = $(TEMP_PATH) ;
+C.OutputPath coffee : $(BINARY_PATH) ;
+C.OutputName coffee : coffee ;
+C.Application coffee : $(SOURCES) : windows ;

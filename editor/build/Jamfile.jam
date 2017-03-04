@@ -1,0 +1,173 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+
+LIBRARY_PATH = ../../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+TEMP_PATH = ../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPostfix * : ;
+
+SubInclude TOP : coffee_editor_include ;
+SubDir TOP ../source/ ;
+
+SOURCES =
+    coffee_editor.h
+    coffee_editor.cpp
+    coffee_editor_includes.h
+    coffee_editor_externals.h
+    config/config.h
+    config/config.cpp
+    project/project_config.h
+    project/project_config.cpp
+    project/project_target.h
+    project/project_target.cpp
+    project/project_config_target.h
+    project/project_config_target.cpp
+    widget/widgets.h
+    widget/config_dialog/widget_config_dialog.h
+    widget/config_dialog/widget_config_dialog.cpp
+    widget/config_dialog/widget_config_general.h
+    widget/config_dialog/widget_config_general.cpp
+    widget/config_dialog/widget_config_graphics.h
+    widget/config_dialog/widget_config_graphics.cpp
+    widget/config_dialog/widget_config_audio.h
+    widget/config_dialog/widget_config_audio.cpp
+    widget/config_dialog/widget_config_shortcuts.h
+    widget/config_dialog/widget_config_shortcuts.cpp
+    widget/editor_frame/widget_editor_frame.h
+    widget/editor_frame/widget_editor_frame.cpp
+    widget/explorer/widget_explorer.h
+    widget/explorer/widget_explorer.cpp
+    widget/explorer/path_info/path_info.h
+    widget/explorer/path_info/path_info.cpp
+    widget/gizmo_controller/widget_gizmo_controller.h
+    widget/gizmo_controller/widget_gizmo_controller.cpp
+    widget/node_editor/widget_node_editor.h
+    widget/node_editor/widget_node_editor.cpp
+    widget/node_editor/widget_node_editor_component.h
+    widget/node_editor/widget_node_editor_component.cpp
+    widget/mdi/widget_mdi.h
+    widget/mdi/widget_mdi.cpp
+    widget/package_importer/widget_package_importer.h
+    widget/package_importer/widget_package_importer.cpp
+    widget/project_browser/widget_project_browser.h
+    widget/project_browser/widget_project_browser.cpp
+    widget/project_manager/widget_project_general.h
+    widget/project_manager/widget_project_general.cpp
+    widget/project_manager/widget_project_manager.h
+    widget/project_manager/widget_project_manager.cpp
+    widget/project_manager/widget_project_plugins.h
+    widget/project_manager/widget_project_plugins.cpp
+    widget/project_manager/deploy/widget_deploy_target.h
+    widget/project_manager/deploy/widget_deploy_target.cpp
+    widget/project_manager/deploy/widget_deploy_package.h
+    widget/project_manager/deploy/widget_deploy_package.cpp
+    widget/project_manager/deploy/widget_deploy_desktop.h
+    widget/project_manager/deploy/widget_deploy_desktop.cpp
+    widget/properties/widget_properties.h
+    widget/properties/widget_properties.cpp
+    widget/selection_controller/widget_selection_controller.h
+    widget/selection_controller/widget_selection_controller.cpp
+    widget/undo_controller/widget_undo_controller.h
+    widget/undo_controller/widget_undo_controller.cpp
+    widget/undo_controller/widget_undo_list.h
+    widget/undo_controller/widget_undo_list.cpp
+    widget/output/widget_output.h
+    widget/output/widget_output.cpp
+    widget/output/widget_output_bar.h
+    widget/output/widget_output_bar.cpp
+    widget/debugger/widget_debugger.h
+    widget/debugger/widget_debugger.cpp
+    widget/debugger/pass/debugger_pass.h
+    widget/debugger/pass/debugger_pass.cpp
+    widget/debugger/pass/debugger_pass_type.h
+    widget/debugger/pass/debugger_pass_type.cpp
+    asset/asset_importer.h
+    asset/asset_importer.cpp
+    asset/asset_manager.h
+    asset/asset_manager.cpp
+    asset/asset_sync_flag.h
+    asset/asset_mode.h
+    asset/asset_mode.cpp
+    asset/asset_widget.h
+    asset/asset_widget.cpp
+    asset/asset_resource_widget.h
+    asset/asset_resource_widget.cpp
+    asset/component/asset_component.h
+    asset/component/asset_component.cpp
+    asset/font/asset_font_fnt.h
+    asset/font/asset_font_fnt.cpp
+    asset/font/asset_font_ttf.h
+    asset/font/asset_font_ttf.cpp
+    asset/texture/asset_texture.h
+    asset/texture/asset_texture.cpp
+    asset/texture/asset_texture_png.h
+    asset/texture/asset_texture_png.cpp
+    asset/texture/asset_texture_ies.h
+    asset/texture/asset_texture_ies.cpp
+    asset/texture/asset_texture_hdr.h
+    asset/texture/asset_texture_hdr.cpp
+    asset/shader/asset_shader_glsl.h
+    asset/shader/asset_shader_glsl.cpp
+    asset/shader/asset_shader_property.h
+    asset/shader/asset_shader_property.cpp
+    asset/mesh/asset_mesh_obj.h
+    asset/mesh/asset_mesh_obj.cpp
+    asset/mesh/asset_mesh_obj_file.h
+    asset/mesh/asset_mesh_obj_file.cpp
+    asset/mesh/asset_mesh_mapping.h
+    asset/mesh/asset_mesh_mapping.cpp
+    asset/mesh/asset_mesh_modifier.h
+    asset/mesh/asset_mesh_modifier.cpp
+    asset/plugin/asset_plugin.h
+    asset/plugin/asset_plugin.cpp
+    asset/plugin/asset_plugin_editor.h
+    asset/plugin/asset_plugin_editor.cpp
+    asset/point_cloud/asset_point_cloud_ply.h
+    asset/point_cloud/asset_point_cloud_ply.cpp
+    asset/sound/asset_sound_wav.h
+    asset/sound/asset_sound_wav.cpp
+    asset/sound/asset_sound_ogg.h
+    asset/sound/asset_sound_ogg.cpp
+    document/document.h
+    document/document.cpp
+    document/scene_editor/scene_editor.h
+    document/scene_editor/scene_editor.cpp
+    document/scene_editor/nodes_handling/scene_editor_node_controller.h
+    document/scene_editor/nodes_handling/scene_editor_node_controller.cpp
+    document/scene_editor/nodes_handling/scene_editor_open_node.h
+    document/scene_editor/nodes_handling/scene_editor_open_node.cpp
+    document/scene_editor/nodes_handling/scene_editor_close_node.h
+    document/scene_editor/nodes_handling/scene_editor_close_node.cpp
+    document/scene_editor/nodes_handling/scene_editor_add_node.h
+    document/scene_editor/nodes_handling/scene_editor_add_node.cpp
+    document/scene_editor/nodes_handling/scene_editor_group_nodes.h
+    document/scene_editor/nodes_handling/scene_editor_group_nodes.cpp
+    document/scene_editor/nodes_handling/scene_editor_attach_node.h
+    document/scene_editor/nodes_handling/scene_editor_attach_node.cpp
+    document/scene_editor/nodes_handling/scene_editor_detach_node.h
+    document/scene_editor/nodes_handling/scene_editor_detach_node.cpp
+    document/scene_editor/nodes_handling/scene_editor_set_root_undo.h
+    document/scene_editor/nodes_handling/scene_editor_set_root_undo.cpp
+    document/scene_editor/nodes_handling/scene_editor_instantiate.h
+    document/scene_editor/nodes_handling/scene_editor_instantiate.cpp
+    component/components.h
+    component/component_types.h
+    component/component_types.cpp
+    component/component_registration.hpp
+;
+
+AutoSourceGroup coffee_editor : $(SOURCES) ;
+Workspace coffee_editor : coffee_editor ;
+
+if $(COMPILER) = mingw
+{
+    C.LinkFlags coffee_editor : -Wl,--out-implib,$(LIBRARY_PATH)/coffee_editor.dll.a ;
+}
+
+C.LinkPrebuiltLibraries coffee_editor : $(PREBUILT_LIBRARIES) ;
+
+LOCATE_TARGET = $(TEMP_PATH) ;
+
+C.OutputPath coffee_editor : $(LIBRARY_PATH) ;
+C.OutputName coffee_editor : coffee_editor ;
+C.Library coffee_editor : $(SOURCES) : shared ;
+

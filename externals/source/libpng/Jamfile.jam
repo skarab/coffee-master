@@ -1,0 +1,30 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : libpng_include ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix libpng : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath libpng : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName libpng : libpng ;
+
+C.Library libpng :
+    pack/png.c
+    pack/pngerror.c
+    pack/pnggccrd.c
+    pack/pngget.c
+    pack/pngmem.c
+    pack/pngpread.c
+    pack/pngread.c
+    pack/pngrio.c
+    pack/pngrtran.c
+    pack/pngrutil.c
+    pack/pngset.c
+    pack/pngtrans.c
+    pack/pngvcrd.c
+    pack/pngwio.c
+    pack/pngwrite.c
+    pack/pngwtran.c
+    pack/pngwutil.c
+;

@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/lz4/lz4_include ;
+
+PREBUILT_LIBRARIES +=
+    lz4
+;

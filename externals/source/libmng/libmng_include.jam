@@ -1,0 +1,6 @@
+SubInclude TOP : $(ROOT)/externals/source/zlib/zlib_include ;
+SubInclude TOP : $(ROOT)/externals/source/libjpeg/libjpeg_include ;
+
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/libmng/pack/
+;

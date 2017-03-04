@@ -1,0 +1,6 @@
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/pthreads/pack/
+;
+
+C.Defines * : PTW32_STATIC_LIB ;
+C.Defines * : PTW32_BUILD_INLINED ;

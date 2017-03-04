@@ -1,0 +1,35 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicMathCurveBezier::Constructors);
+    REGISTER_TEST(BasicMathCurveBezier::GetLength);
+    REGISTER_TEST(BasicMathCurveBezier::GetPoint);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicMathCurveBezier)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            // Test template build with various classes, and check for default constructor correctness
+            basic::Bezier<basic::Vector2> bezier2f;
+            TDOG_ASSERT(bezier2f.GetLength()==0.0f);
+            basic::Bezier<basic::Vector3> bezier3f;
+            TDOG_ASSERT(bezier3f.GetLength()==0.0f);
+            basic::Bezier<basic::Vector4> bezier4f;
+            TDOG_ASSERT(bezier4f.GetLength()==0.0f);
+        }
+
+        TDOG_TEST_CASE(GetLength)
+        {
+            basic::Bezier<basic::Vector2> bezier(basic::Vector2(), basic::Vector2(), basic::Vector2(1.0f, 0.0f), basic::Vector2(1.0f, 0.0f));
+            TDOG_ASSERT(coffee::IsEqual(bezier.GetLength(), 1.0f));
+        }
+
+        TDOG_TEST_CASE(GetPoint)
+        {
+            basic::Bezier<basic::Vector2> bezier(basic::Vector2(), basic::Vector2(), basic::Vector2(1.0f, 0.0f), basic::Vector2(1.0f, 0.0f));
+            TDOG_ASSERT(bezier.GetPoint(0.0f)==basic::Vector2());
+            TDOG_ASSERT(bezier.GetPoint(1.0f)==basic::Vector2(1.0f, 0.0f));
+        }
+    }
+}
+#endif

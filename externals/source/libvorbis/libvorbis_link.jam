@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/libvorbis/libvorbis_include ;
+
+PREBUILT_LIBRARIES +=
+    libvorbis
+;

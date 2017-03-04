@@ -1,0 +1,60 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicGeometricRectangle::Constructors);
+    REGISTER_TEST(BasicGeometricRectangle::Operators);
+    REGISTER_TEST(BasicGeometricRectangle::IsPointInside);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicGeometricRectangle)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Rectangle empty;
+            TDOG_ASSERT(empty.IsEmpty());
+            TDOG_ASSERT(empty.Position==basic::Vector2i());
+            TDOG_ASSERT(empty.Size==basic::Vector2i());
+            
+            basic::Rectangle rectangle(basic::Vector2i(1, 1), basic::Vector2i());
+            TDOG_ASSERT(rectangle.IsEmpty());
+            TDOG_ASSERT(rectangle.Position==basic::Vector2i(1, 1));
+            TDOG_ASSERT(rectangle.Size==basic::Vector2i());
+            
+            basic::Rectangle other(rectangle);
+            TDOG_ASSERT(other.IsEmpty());            
+            TDOG_ASSERT(other.Position==rectangle.Position);
+            TDOG_ASSERT(other.Size==rectangle.Size);
+        }
+        
+        TDOG_TEST_CASE(Operators)
+        {
+            basic::Rectangle empty;
+            basic::Rectangle rectangle(basic::Vector2i(1, 1), basic::Vector2i());
+            basic::Rectangle other(basic::Vector2i(), basic::Vector2i(1, 1));
+            TDOG_ASSERT(empty==empty);
+            TDOG_ASSERT(rectangle==rectangle);
+            TDOG_ASSERT(other==other);
+            TDOG_ASSERT(rectangle!=empty);
+            TDOG_ASSERT(other!=rectangle);
+            
+            other += empty;
+            TDOG_ASSERT(other.Position==basic::Vector2i());
+            TDOG_ASSERT(other.Size==basic::Vector2i(1, 1));
+            other += rectangle;
+            TDOG_ASSERT(other.Position==basic::Vector2i());
+            TDOG_ASSERT(other.Size==basic::Vector2i(1, 1));
+        }
+        
+        TDOG_TEST_CASE(IsPointInside)
+        {
+            basic::Rectangle empty;
+            TDOG_ASSERT(!empty.IsPointInside(basic::Vector2i()));
+            
+            basic::Rectangle rectangle(basic::Vector2i(), basic::Vector2i(2, 2));
+            TDOG_ASSERT(rectangle.IsPointInside(basic::Vector2i()));
+            TDOG_ASSERT(rectangle.IsPointInside(basic::Vector2i(2, 2)));
+            TDOG_ASSERT(!rectangle.IsPointInside(basic::Vector2i(3, 3)));
+        }
+
+    }
+}
+#endif

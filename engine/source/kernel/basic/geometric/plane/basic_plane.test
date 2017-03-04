@@ -1,0 +1,74 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicGeometricPlane::Constructors);
+    REGISTER_TEST(BasicGeometricPlane::FindLineIntersection);
+    REGISTER_TEST(BasicGeometricPlane::FindRayIntersection);
+    REGISTER_TEST(BasicGeometricPlane::FindSegmentIntersection);
+    REGISTER_TEST(BasicGeometricPlane::ComputeDistanceFromPoint);
+    REGISTER_TEST(BasicGeometricPlane::ComputeProjectedPoint);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicGeometricPlane)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Plane empty_plane;
+            TDOG_ASSERT(empty_plane.GetNormal()==basic::Vector3::YAxis);
+            TDOG_ASSERT(empty_plane.GetPoint()==basic::Vector3::Zero);
+            
+            basic::Plane plane(basic::Vector3::XAxis, basic::Vector3::ZAxis);
+            TDOG_ASSERT(plane.GetNormal()==basic::Vector3::ZAxis);
+            TDOG_ASSERT(plane.GetPoint()==basic::Vector3::Zero);
+        
+            plane.Set(basic::Vector3::XAxis, basic::Vector3::XAxis);
+            TDOG_ASSERT(plane.GetNormal()==basic::Vector3::XAxis);
+            TDOG_ASSERT(plane.GetPoint()==basic::Vector3::XAxis);
+        }
+        
+        TDOG_TEST_CASE(FindLineIntersection)
+        {
+            basic::Plane plane;
+            basic::Line3 line(basic::Vector3::One, basic::Vector3::YAxis);
+            basic::Vector3 intersection;
+            TDOG_ASSERT(plane.FindLineIntersection(intersection, line));
+            TDOG_ASSERT(intersection==basic::Vector3(1.0f, 0.0f, 1.0f));
+        }
+        
+        TDOG_TEST_CASE(FindRayIntersection)
+        {
+            basic::Plane plane;
+            basic::Ray3 ray(-basic::Vector3::One, basic::Vector3::YAxis);
+            basic::Vector3 intersection;
+            TDOG_ASSERT(!plane.FindRayIntersection(intersection, ray, true));
+            TDOG_ASSERT(plane.FindRayIntersection(intersection, ray, false));
+            TDOG_ASSERT(intersection==basic::Vector3(-1.0f, 0.0f, -1.0f));
+        }
+        
+        TDOG_TEST_CASE(FindSegmentIntersection)
+        {
+            basic::Plane plane;
+            basic::Segment3 segment(-basic::Vector3::One, basic::Vector3::One);
+            basic::Vector3 intersection;
+            TDOG_ASSERT(!plane.FindSegmentIntersection(intersection, segment, true));
+            TDOG_ASSERT(plane.FindSegmentIntersection(intersection, segment, false));
+            TDOG_ASSERT(intersection==basic::Vector3::Zero);
+        }
+
+        TDOG_TEST_CASE(ComputeDistanceFromPoint)
+        {
+            basic::Plane plane;
+            TDOG_ASSERT(IsEqual(plane.ComputeDistanceFromPoint(basic::Vector3::Zero), 0.0f));
+            TDOG_ASSERT(IsEqual(plane.ComputeDistanceFromPoint(basic::Vector3::One), 1.0f));
+            TDOG_ASSERT(IsEqual(plane.ComputeDistanceFromPoint(-basic::Vector3::One), -1.0f));
+        }
+        
+        TDOG_TEST_CASE(ComputeProjectedPoint)
+        {
+            basic::Plane plane;
+            TDOG_ASSERT(plane.ComputeProjectedPoint(basic::Vector3::Zero)==basic::Vector3::Zero);
+            TDOG_ASSERT(plane.ComputeProjectedPoint(basic::Vector3::One)==basic::Vector3(1.0f, 0.0f, 1.0f));
+            TDOG_ASSERT(plane.ComputeProjectedPoint(-basic::Vector3::One)==basic::Vector3(-1.0f, 0.0f, -1.0f));
+        }
+    }
+}
+#endif

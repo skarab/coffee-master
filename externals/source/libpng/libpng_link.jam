@@ -1,0 +1,7 @@
+SubInclude TOP : $(ROOT)/externals/source/zlib/zlib_include ;
+SubInclude TOP : $(ROOT)/externals/source/libpng/libpng_include ;
+
+PREBUILT_LIBRARIES +=
+    libpng
+    zlib
+;

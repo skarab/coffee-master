@@ -1,0 +1,7 @@
+SubInclude TOP : $(ROOT)/externals/source/libogg/libogg_include ;
+
+C.IncludeDirectories * :
+    $(ROOT)/externals/source/libvorbis/pack/include/
+    $(ROOT)/externals/source/libvorbis/pack/src/
+    $(ROOT)/externals/source/libvorbis/pack/lib/
+;

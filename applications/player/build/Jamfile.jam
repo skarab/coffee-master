@@ -1,0 +1,24 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : $(ROOT)/player/build/coffee_player_link ;
+
+BINARY_PATH = ../../../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+TEMP_PATH = ../binaries/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPostfix * : ;
+
+SubDir TOP ../source/ ;
+
+SOURCES =
+    player.h
+    player.cpp
+;
+
+AutoSourceGroup player : $(SOURCES) ;
+Workspace player : player ;
+
+C.LinkPrebuiltLibraries player : $(PREBUILT_LIBRARIES) ;
+
+LOCATE_TARGET = $(TEMP_PATH) ;
+C.OutputPath player : $(BINARY_PATH) ;
+C.OutputName player : player ;
+C.Application player : $(SOURCES) : windows ;

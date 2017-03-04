@@ -1,0 +1,11 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : glee_include ;
+
+C.OutputPostfix * : ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath GLee : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName GLee : GLee ;
+C.OutputSuffix GLee : lib ;
+C.Library GLee : pack/glee.c ;

@@ -1,0 +1,22 @@
+// -------------------------------------------------------------------------------------------------
+// Base tonemapper fragment shader [begin]
+// -------------------------------------------------------------------------------------------------
+
+#version 130
+#extension GL_ARB_texture_rectangle : enable
+
+uniform sampler2DRect input_texture;
+uniform sampler2D luminance_texture;
+uniform float brightness;
+uniform float contrast;
+uniform float gamma;
+uniform float exposure;
+uniform float eye_adaptation;
+
+varying vec2 uv;
+
+float GetExposure()
+{
+    float eye_luminance = texture2D(luminance_texture, vec2(0.5, 0.5)).x;
+    return exposure*(1.0-eye_adaptation)+0.12*exposure*eye_adaptation*(1.0/(eye_luminance+0.0001));
+}

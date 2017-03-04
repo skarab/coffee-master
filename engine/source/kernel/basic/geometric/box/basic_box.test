@@ -1,0 +1,57 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicGeometricBox::Constructors);
+    REGISTER_TEST(BasicGeometricBox::Operators);
+    REGISTER_TEST(BasicGeometricBox::IsPointInside);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicGeometricBox)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Box empty_box;
+            TDOG_ASSERT(empty_box.IsEmpty());
+            TDOG_ASSERT(empty_box.Center==basic::Vector3::Zero);
+            TDOG_ASSERT(empty_box.Size==basic::Vector3::Zero);
+            
+            basic::Box a_box(basic::Vector3::One, basic::Vector3::Zero);
+            TDOG_ASSERT(a_box.IsEmpty());
+            TDOG_ASSERT(a_box.Center==basic::Vector3::One);
+            TDOG_ASSERT(a_box.Size==basic::Vector3::Zero);
+            
+            basic::Box one_box(basic::Vector3::Zero, basic::Vector3::One);
+            TDOG_ASSERT(!one_box.IsEmpty());            
+            TDOG_ASSERT(one_box.Center==basic::Vector3::Zero);
+            TDOG_ASSERT(one_box.Size==basic::Vector3::One);
+        }
+        
+        TDOG_TEST_CASE(Operators)
+        {
+            basic::Box empty_box;
+            basic::Box a_box(basic::Vector3::One, basic::Vector3::Zero);
+            basic::Box one_box(basic::Vector3::Zero, basic::Vector3::One);
+            TDOG_ASSERT(empty_box==empty_box);
+            TDOG_ASSERT(a_box==a_box);
+            TDOG_ASSERT(one_box==one_box);
+            TDOG_ASSERT(a_box!=empty_box);
+            TDOG_ASSERT(one_box!=a_box);
+            
+            one_box *= basic::Matrix();
+            TDOG_ASSERT(one_box.Center==basic::Vector3::Zero);
+            TDOG_ASSERT(one_box.Size==basic::Vector3::One);
+        }
+        
+        TDOG_TEST_CASE(IsPointInside)
+        {
+            basic::Box empty_box;
+            TDOG_ASSERT(!empty_box.IsPointInside(basic::Vector3::Zero));
+            
+            basic::Box one_box(basic::Vector3::Zero, basic::Vector3(2.0f, 2.0f, 2.0f));
+            TDOG_ASSERT(one_box.IsPointInside(basic::Vector3::Zero));
+            TDOG_ASSERT(one_box.IsPointInside(basic::Vector3::One));
+            TDOG_ASSERT(!one_box.IsPointInside(basic::Vector3(1.1f, 1.0f, 1.0f)));
+        }
+
+    }
+}
+#endif

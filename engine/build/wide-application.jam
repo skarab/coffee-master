@@ -1,0 +1,16 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    wide/application/application.h
+    wide/application/application.cpp
+    wide/application/control/application_control.h
+    wide/application/control/application_control.cpp
+    wide/application/control/application_control_manager.h
+    wide/application/control/application_control_manager.cpp
+    wide/application/command/application_command.h
+    wide/application/command/application_command.cpp
+    wide/application/macros/application_macros.h
+    wide/application/macros/application_macros_unix.h
+    wide/application/macros/application_macros_windows.h    
+;
+

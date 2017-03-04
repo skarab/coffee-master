@@ -1,0 +1,19 @@
+SubInclude TOP : $(ROOT)/externals/source/glee/glee_include ;
+SubInclude TOP : $(ROOT)/externals/source/lz4/lz4_include ;
+SubInclude TOP : $(ROOT)/externals/source/zlib/zlib_include ;
+SubInclude TOP : $(ROOT)/externals/source/openal/openal_include ;
+SubInclude TOP : $(ROOT)/externals/source/libvorbis/libvorbis_include ;
+SubInclude TOP : $(ROOT)/externals/source/libogg/libogg_include ;
+SubInclude TOP : $(ROOT)/externals/source/newton/newton_include ;
+SubInclude TOP : $(ROOT)/externals/source/pthreads/pthreads_include ;
+
+PREBUILT_LIBRARIES +=
+    coffee_engine
+;
+
+C.Defines * : COFFEE_ENGINE ;
+
+C.IncludeDirectories * :
+    $(ROOT)/engine/source/
+;
+

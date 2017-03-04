@@ -1,0 +1,41 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    kernel/core/core.h
+    kernel/core/error/core_error.h
+    kernel/core/error/core_error.cpp
+    kernel/core/error/core_error_code.h
+    kernel/core/error/core_error_code.cpp
+    kernel/core/error/core_error_handler.h
+    kernel/core/error/core_error_handler.cpp
+    kernel/core/error/core_error_handler_windows.h
+    kernel/core/error/core_error_handler_windows.hpp
+    kernel/core/log/core_log.h
+    kernel/core/log/core_log.cpp
+    kernel/core/macros/core_macros.h
+    kernel/core/macros/core_macros_error.h
+    kernel/core/macros/core_macros_log.h
+    kernel/core/macros/core_macros_platform.h
+    kernel/core/macros/core_macros_singleton.h
+    kernel/core/memory/core_allocator.h
+    kernel/core/memory/core_allocator_default.h
+    kernel/core/memory/core_allocator_default.cpp
+    kernel/core/memory/core_memory.h
+    kernel/core/memory/core_memory_manager.h
+    kernel/core/memory/core_memory_manager.cpp
+    kernel/core/platform/core_platform.h
+    kernel/core/platform/core_platform.cpp
+    kernel/core/platform/core_platform_types.h
+    kernel/core/platform/core_platform_unix.h
+    kernel/core/platform/core_platform_unix_includes.h
+    kernel/core/platform/core_platform_windows.h
+    kernel/core/platform/core_platform_windows_includes.h
+    kernel/core/platform/core_platform_unix.hpp
+    kernel/core/platform/core_platform_windows.hpp
+    kernel/core/processor/core_processor.h
+    kernel/core/processor/core_processor.cpp
+    kernel/core/processor/core_processor_type.h
+    kernel/core/processor/instruction_set/core_instruction_set.h
+    kernel/core/processor/instruction_set/core_instruction_set.cpp
+;    
+

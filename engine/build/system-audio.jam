@@ -1,0 +1,18 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    system/audio/audio.h
+    system/audio/audio_module.h
+    system/audio/audio_module.cpp
+    system/audio/device/audio_device.h
+    system/audio/device/audio_device.cpp
+    system/audio/device/config/audio_config.h
+    system/audio/device/config/audio_config.cpp
+    system/audio/sound/audio_sound.h
+    system/audio/sound/audio_sound.cpp
+    system/audio/component/audio_component.h
+    system/audio/component/audio_component.cpp
+    system/audio/component/audio_components.h
+    system/audio/component/sound/audio_component_sound.h
+    system/audio/component/sound/audio_component_sound.cpp
+;

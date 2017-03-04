@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/newton/newton_include ;
+
+PREBUILT_LIBRARIES +=
+    newton
+;

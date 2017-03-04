@@ -1,0 +1,23 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicGeometricSegment3::Constructors);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicGeometricSegment3)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            basic::Segment3 empty;
+            TDOG_ASSERT(empty.A==basic::Vector3::Zero);
+            TDOG_ASSERT(empty.B==basic::Vector3::Zero);
+            TDOG_ASSERT(empty.IsZero());
+            
+            basic::Segment3 segment(basic::Vector3::XAxis, basic::Vector3::YAxis);
+            TDOG_ASSERT(segment.A==basic::Vector3::XAxis);
+            TDOG_ASSERT(segment.B==basic::Vector3::YAxis);
+            TDOG_ASSERT(!segment.IsZero());            
+        }
+        
+    }
+}
+#endif

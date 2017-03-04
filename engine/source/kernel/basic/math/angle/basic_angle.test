@@ -1,0 +1,79 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicMathAngle::Constructors);
+    REGISTER_TEST(BasicMathAngle::Degrees);
+    REGISTER_TEST(BasicMathAngle::Operators);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicMathAngle)
+    {
+        TDOG_TEST_CASE(Constructors)
+        {
+            TDOG_ASSERT(basic::Angle()==0.0f);
+            TDOG_ASSERT(basic::Angle(Pi)==Pi);
+            TDOG_ASSERT(basic::Angle(Pi*2.0f)==0.0f);
+            TDOG_ASSERT(basic::Angle(-Pi)==Pi);
+        }
+
+        TDOG_TEST_CASE(Degrees)
+        {
+            basic::Angle angle;
+
+            angle.SetDegrees(0.0f);
+            TDOG_ASSERT(angle==0.0f);
+            TDOG_ASSERT(IsEqual(angle.GetDegrees(), 0.0f));
+
+            angle.SetDegrees(180.0f);
+            TDOG_ASSERT(angle==Pi);
+            TDOG_ASSERT(IsEqual(angle.GetDegrees(), 180.0f));
+
+            angle.SetDegrees(360.0f);
+            TDOG_ASSERT(angle==0.0f);
+            TDOG_ASSERT(IsEqual(angle.GetDegrees(), 0.0f));
+
+            angle.SetDegrees(-180.0f);
+            TDOG_ASSERT(angle==Pi);
+            TDOG_ASSERT(IsEqual(angle.GetDegrees(), 180.0f));
+
+            angle.SetDegrees(-360.0f);
+            TDOG_ASSERT(angle==0.0f);
+            TDOG_ASSERT(IsEqual(angle.GetDegrees(), 0.0f));
+
+            angle.SetDegrees(360.0f*100.0f);
+            TDOG_ASSERT(angle==0.0f);
+            TDOG_ASSERT(IsEqual(angle.GetDegrees(), 0.0f));
+        }
+
+        TDOG_TEST_CASE(Operators)
+        {
+            basic::Angle angle_zero(0.0f);
+            basic::Angle angle_pi(Pi);
+            basic::Angle angle_two_pi(Pi*2.0f);
+            basic::Angle angle_minus_pi(-Pi);
+
+            TDOG_ASSERT(angle_zero*angle_pi==0.0f);
+            TDOG_ASSERT(angle_zero+angle_pi==Pi);
+            TDOG_ASSERT(angle_zero-angle_pi==Pi);
+            TDOG_ASSERT(angle_zero-angle_minus_pi==Pi);
+
+            TDOG_ASSERT(angle_pi+angle_pi==0.0f);
+            TDOG_ASSERT(angle_pi-angle_minus_pi==0.0f);
+
+            TDOG_ASSERT(angle_two_pi+angle_pi==Pi);
+            TDOG_ASSERT(angle_two_pi-angle_pi==Pi);
+            TDOG_ASSERT(angle_two_pi-angle_minus_pi==Pi);
+
+            TDOG_ASSERT(angle_minus_pi+angle_pi==0.0f);
+            TDOG_ASSERT(angle_minus_pi-angle_pi==0.0f);
+            
+            TDOG_ASSERT(basic::Angle(0.0f)==basic::Angle(Pi*2.0f));
+            TDOG_ASSERT(basic::Angle(0.0f)==basic::Angle(Pi*10.0f));
+            TDOG_ASSERT(basic::Angle(0.0f)==basic::Angle(-Pi*2.0f));
+            TDOG_ASSERT(basic::Angle(0.0f)==basic::Angle(-Pi*10.0f));
+            
+            TDOG_ASSERT(basic::Angle(0.0f)<basic::Angle(Pi));
+            TDOG_ASSERT(basic::Angle(0.0f)<basic::Angle(-Pi));
+        }
+    }
+}
+#endif

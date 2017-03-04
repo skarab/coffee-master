@@ -1,0 +1,26 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    system/scene/scene.h
+    system/scene/scene_world.h
+    system/scene/scene_world.cpp
+    system/scene/scene_resource.h
+    system/scene/scene_resource.cpp
+    system/scene/node/scene_node.h
+    system/scene/node/scene_node.cpp
+    system/scene/node/scene_instance.h
+    system/scene/node/scene_instance.cpp
+    system/scene/component/scene_component.h
+    system/scene/component/scene_component.cpp
+    system/scene/component/scene_component_macros.h
+    system/scene/transform/scene_transform.h
+    system/scene/transform/scene_transform.cpp
+    system/scene/transform/scene_trs.h
+    system/scene/transform/scene_trs.cpp
+    system/scene/bounding/scene_bounding.h
+    system/scene/bounding/scene_bounding.cpp
+    system/scene/path/scene_path.h
+    system/scene/path/scene_path.cpp
+    system/scene/scene_flag.h
+    system/scene/scene_flag.cpp
+;

@@ -1,0 +1,7 @@
+#include "kernel/basic/geometric/rectangle/basic_rectangle.test"
+#include "kernel/basic/geometric/line/basic_line3.test"
+#include "kernel/basic/geometric/ray/basic_ray3.test"
+#include "kernel/basic/geometric/segment/basic_segment3.test"
+#include "kernel/basic/geometric/box/basic_box.test"
+#include "kernel/basic/geometric/sphere/basic_sphere.test"
+#include "kernel/basic/geometric/plane/basic_plane.test"

@@ -1,0 +1,5 @@
+SubInclude TOP : $(ROOT)/externals/source/lcms/lcms_include ;
+
+PREBUILT_LIBRARIES +=
+    lcms
+;

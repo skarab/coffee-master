@@ -1,0 +1,14 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : hdrloader_include ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix hdrloader : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath hdrloader : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName hdrloader : hdrloader ;
+
+C.Library hdrloader :
+    pack/hdrloader.cpp
+;

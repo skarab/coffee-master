@@ -1,0 +1,6 @@
+SubInclude TOP : $(ROOT)/externals/source/freetype/freetype_include ;
+
+PREBUILT_LIBRARIES +=
+    freetype
+;
+

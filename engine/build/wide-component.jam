@@ -1,0 +1,11 @@
+SubDir TOP ../source/ ;
+
+SOURCES +=
+    wide/component/components.h
+    wide/component/controller/component_controller.h
+    wide/component/controller/component_controller.cpp
+    wide/component/controller/free/component_free_controller.h
+    wide/component/controller/free/component_free_controller.cpp
+    wide/component/controller/character/component_character_controller.h
+    wide/component/controller/character/component_character_controller.cpp
+;

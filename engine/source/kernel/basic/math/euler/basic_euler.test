@@ -1,0 +1,47 @@
+#ifdef UNIT_TEST_REGISTER
+    REGISTER_TEST(BasicMathEuler::Operators);
+    REGISTER_TEST(BasicMathEuler::SetDegrees);
+    REGISTER_TEST(BasicMathEuler::SetFromQuaternion);
+#else
+namespace unit_test
+{
+    TDOG_TEST_SUITE(BasicMathEuler)
+    {
+        TDOG_TEST_CASE(Operators)
+        {
+            basic::Euler zero(0.0f, 0.0f, 0.0f);
+            basic::Euler test(zero);
+            TDOG_ASSERT(test==zero);
+            test.Set(Pi, Pi/2.0f, 1.0f);
+            TDOG_ASSERT(test!=zero);
+            TDOG_ASSERT(test-test==zero);
+            TDOG_ASSERT(test+test==basic::Euler(0.0f, Pi, 2.0f));
+            test += test;
+            TDOG_ASSERT(test==basic::Euler(0.0f, Pi, 2.0f));
+            test -= test;
+            TDOG_ASSERT(test==zero);
+        }
+        
+        TDOG_TEST_CASE(SetDegrees)
+        {
+            basic::Euler test;
+            test.SetDegrees(90.0f, 180.0f, -90.0f);
+            TDOG_ASSERT(test==basic::Euler(Pi/2.0f, Pi, Pi*3.0f/2.0f));
+        }
+        
+        TDOG_TEST_CASE(SetFromQuaternion)
+        {
+            basic::Quaternion quaternion;
+            basic::Euler test(1.0f, 0.0f, 0.0f);
+            test = quaternion;
+            TDOG_ASSERT(test==quaternion);
+            test.SetDegrees(90.0f, 180.0f, -90.0f);
+            test = quaternion;
+            TDOG_ASSERT(test==quaternion);
+            test = basic::Euler(quaternion);
+            TDOG_ASSERT(test==quaternion);
+         }   
+        
+    }
+}
+#endif

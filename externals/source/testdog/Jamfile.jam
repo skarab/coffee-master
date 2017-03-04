@@ -1,0 +1,24 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : testdog_include ;
+
+SOURCES =
+    pack/src/runner.cpp
+    pack/src/basic_test.cpp
+    pack/src/util.cpp
+    pack/src/basic_reporter.cpp
+    pack/src/null_reporter.cpp
+    pack/src/text_reporter.cpp
+    pack/src/xml_reporter.cpp
+    pack/src/html_reporter.cpp
+;
+
+C.IncludeDirectories * : pack/inc ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix testdog : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath testdog : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName testdog : testdog ;
+C.Library testdog : $(SOURCES) ;

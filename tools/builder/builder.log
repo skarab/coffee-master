@@ -1,0 +1,40 @@
+Coffee started
+Choosing instructionset : GENERIC
+Windows:  6.1.7601, Service pack 1.0, Product Type 1
+Finding graphics mode...
+Falling back to desktop graphics mode...
+Graphics mode set to 1366x768 32bpp
+Using 32 Bits per pixel
+VerticalSync is enabled
+OpenGL version : 2.1.0 - Build 8.15.10.2361
+Checking required extension ARB_shading_language_100
+Checking required extension ARB_vertex_program
+Checking required extension ARB_vertex_shader
+Checking required extension ARB_fragment_program
+Checking required extension ARB_fragment_shader
+Checking required extension ARB_shader_objects
+Checking required extension EXT_texture_sRGB
+Checking required extension ARB_multitexture
+Checking required extension ARB_texture_cube_map
+Checking required extension EXT_texture_filter_anisotropic
+Checking required extension ARB_texture_float
+Checking required extension EXT_texture_array
+Checking required extension EXT_packed_float
+Checking required extension EXT_packed_depth_stencil
+Checking required extension ARB_vertex_buffer_object
+Checking required extension EXT_framebuffer_object
+Checking required extension EXT_framebuffer_blit
+Checking required extension ARB_texture_rectangle
+Required graphics extensions checked!
+Anisotropic filtering set to 0x
+Compiling shader /coffee/import/shaders/ambient.shader
+Compiling shader /coffee/import/shaders/sky/skyprobe.shader
+Compiling shader /coffee/import/shaders/tonemap/compute_luminance.shader
+Compiling shader /coffee/import/shaders/tonemap/eye_adaptation.shader
+Compiling shader /coffee/import/shaders/tonemap/generate_mipmap.shader
+Compiling shader /coffee/import/shaders/others/picker.shader
+Quit requested
+[RUN_MODE_MemoryReport] Memory usage peak (Mb) : 2.33
+[RUN_MODE_MemoryReport] Memory leaks : 0
+[RUN_MODE_MemoryReport] Leaked size : 0
+Coffee stopped

@@ -1,0 +1,80 @@
+SubDir TOP ;
+SubInclude TOP : $(ROOT)/coffee ;
+SubInclude TOP : libjpeg_include ;
+
+C.OutputPostfix * : ;
+C.OutputSuffix libjpeg : lib ;
+
+LOCATE_TARGET = lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputPath libjpeg : ../../lib/$(PLATFORM)-$(COMPILER)-$(CONFIG) ;
+C.OutputName libjpeg : libjpeg ;
+
+C.Library libjpeg :
+    pack/cdjpeg.c
+    pack/cjpeg.c
+    pack/ckconfig.c
+    pack/djpeg.c
+    pack/jaricom.c
+    pack/jcapimin.c
+    pack/jcapistd.c
+    pack/jcarith.c
+    pack/jccoefct.c
+    pack/jccolor.c
+    pack/jcdctmgr.c
+    pack/jchuff.c
+    pack/jcinit.c
+    pack/jcmainct.c
+    pack/jcmarker.c
+    pack/jcmaster.c
+    pack/jcomapi.c
+    pack/jcparam.c
+    pack/jcprepct.c
+    pack/jcsample.c
+    pack/jctrans.c
+    pack/jdapimin.c
+    pack/jdapistd.c
+    pack/jdarith.c
+    pack/jdatadst.c
+    pack/jdatasrc.c
+    pack/jdcoefct.c
+    pack/jdcolor.c
+    pack/jddctmgr.c
+    pack/jdhuff.c
+    pack/jdinput.c
+    pack/jdmainct.c
+    pack/jdmarker.c
+    pack/jdmaster.c
+    pack/jdmerge.c
+    pack/jdpostct.c
+    pack/jdsample.c
+    pack/jdtrans.c
+    pack/jerror.c
+    pack/jfdctflt.c
+    pack/jfdctfst.c
+    pack/jfdctint.c
+    pack/jidctflt.c
+    pack/jidctfst.c
+    pack/jidctint.c
+    pack/jmemansi.c
+    pack/jmemmgr.c
+    pack/jmemnobs.c
+    pack/jpegtran.c
+    pack/jquant1.c
+    pack/jquant2.c
+    pack/jutils.c
+    pack/rdbmp.c
+    pack/rdcolmap.c
+    pack/rdgif.c
+    pack/rdjpgcom.c
+    pack/rdppm.c
+    pack/rdrle.c
+    pack/rdswitch.c
+    pack/rdtarga.c
+    pack/transupp.c
+    pack/wrbmp.c
+    pack/wrgif.c
+    pack/wrjpgcom.c
+    pack/wrppm.c
+    pack/wrrle.c
+    pack/wrtarga.c
+;

@@ -1,0 +1,6 @@
+// Ashikhmin-Shirley diffuse calculation
+
+color *= 4.0*(28.0/(23.0*3.14159))
+    * (1.0-specular_color)
+    * (1.0-pow(1.0-max(0.0, dot(normal, pixel_light_direction))/2.0, 5.0))
+    * (1.0-pow(1.0-max(0.0, dot(normal, eye_vector))/2.0, 5.0));
